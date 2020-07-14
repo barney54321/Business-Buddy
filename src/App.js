@@ -1,26 +1,39 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import MenuBar from "./MenuBar";
+import LoginPage from "./LoginPage";
+import Dashboard from "./Dashboard";
+
+class App extends React.Component {
+
+	constructor(props) {
+		super(props)
+
+		this.state = {
+			loggedIn: true,
+		}
+	}
+
+	render() {
+
+		var internals = <></>;
+		var name = "Pizza Planet";
+
+		if (this.state.loggedIn) {
+			internals = <Dashboard app={this}/>
+			name = "Pizza Planet";
+		} else {
+			internals = <LoginPage app={this}/>
+		}
+
+		return (
+			<>
+				<MenuBar name={name}></MenuBar>
+
+				{internals}
+			</>
+		);
+	}
 }
 
 export default App;
