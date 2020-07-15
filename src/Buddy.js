@@ -20,11 +20,16 @@ export default class Buddy extends React.Component {
     }
 
     clickSend = () => {
+
+        if (this.state.currentMessage === "") {
+            return;
+        }
+
         var messages = this.state.messages;
 
         messages.push({
             text: this.state.currentMessage,
-            align: "left",
+            align: "right",
             index: messages.length
         });
 
