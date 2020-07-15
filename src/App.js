@@ -1,39 +1,29 @@
 import React from 'react';
 
 import MenuBar from "./MenuBar";
-import LoginPage from "./LoginPage";
+import LoginPage from "./authorisation/LoginPage";
 import Dashboard from "./Dashboard";
 
-class App extends React.Component {
+import { useAuth0 } from "@auth0/auth0-react";
 
-	constructor(props) {
-		super(props)
+const App = () => {
+	const { isAuthenticated } = useAuth0();
 
-		this.state = {
-			loggedIn: true,
-		}
+	var internals = <></>;
+
+	if (isAuthenticated) {
+		internals = <Dashboard app={this} />
+	} else {
+		internals = <LoginPage app={this} />
 	}
 
-	render() {
+	return (
+		<>
+			<MenuBar name="Pizza Planet" isAuthenticated={isAuthenticated}></MenuBar>
 
-		var internals = <></>;
-		var name = "Pizza Planet";
-
-		if (this.state.loggedIn) {
-			internals = <Dashboard app={this}/>
-			name = "Pizza Planet";
-		} else {
-			internals = <LoginPage app={this}/>
-		}
-
-		return (
-			<>
-				<MenuBar name={name}></MenuBar>
-
-				{internals}
-			</>
-		);
-	}
-}
+			{internals}
+		</>
+	);
+};
 
 export default App;
