@@ -11,6 +11,7 @@ const App = () => {
 
 	var internals = <></>;
 
+
 	if (isAuthenticated) {
 		internals = <Dashboard app={this} />
 	} else {
