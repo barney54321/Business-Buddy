@@ -1,21 +1,44 @@
 import React from 'react';
 
 import Typography from '@material-ui/core/Typography';
-import Paper from '@material-ui/core/Paper';
 import TextField from "@material-ui/core/TextField";
 import Box from "@material-ui/core/Box";
 import Button from "@material-ui/core/Button";
 
 import Message from "./Message";
 
+const initialMessages = [
+    "Hi!",
+    "I'm your Business Buddy 🐨",
+    "I can help you manage your business.",
+    "With me, you can keep track of services you are using, receive notifications tailored to your business needs, and find out information about health advice and business grants.",
+    "First of all, I need a few basic bits of information.",
+    "All data is securely stored in Australia, and you can change or delete anything you want later on from the Settings tab at the top right.",
+    "Where is your business based?",
+]
+
 export default class Buddy extends React.Component {
 
     constructor(props) {
         super(props);
 
+        var messages = [];
+
+        initialMessages.forEach(m => {
+            messages.push({
+                text: m,
+                buddyMessage: true,
+                align: "left",
+                colour: "#E7E6E6",
+                textColour: "#000000",
+                index: messages.length
+            });
+        });
+
         this.state = {
-            messages: [],
+            messages: messages,
             currentMessage: "",
+            lastBudyMessage: initialMessages[initialMessages.length - 1],
         }
     }
 
@@ -29,7 +52,10 @@ export default class Buddy extends React.Component {
 
         messages.push({
             text: this.state.currentMessage,
+            buddyMessage: false,
             align: "right",
+            colour: "#4491FF",
+            textColour: "#FFFFFF",
             index: messages.length
         });
 
@@ -40,7 +66,7 @@ export default class Buddy extends React.Component {
     }
 
     changeText = (e) => {
-        this.setState({currentMessage: e.target.value});
+        this.setState({ currentMessage: e.target.value });
     }
 
     forSubmit = (e) => {
@@ -48,27 +74,54 @@ export default class Buddy extends React.Component {
         this.clickSend();
     }
 
+    addBuddyMessage = (message) => {
+        var messages = this.state.messages;
+
+        messages.push({
+            text: message,
+            buddyMessage: true,
+            align: "left",
+            colour: "#E7E6E6",
+            textColour: "#000000",
+            index: messages.length
+        });
+
+        this.setState({
+            messages: messages,
+            lastBudyMessage: message,
+        });
+    }
+
     render() {
 
-        var messageObjects = this.state.messages.map((obj) => <Message text={obj.text} align={obj.align} key={obj.index}/>);
+        var lastMessage = this.state.messages[this.state.messages.length - 1];
+
+        if (!lastMessage.buddyMessage) {
+            // Last message came from user
+            if (this.state.lastBudyMessage === "Where is your business based?") {
+                this.addBuddyMessage("What industry is your business a part of?");
+            }
+        }
+
+        var messageObjects = this.state.messages.map((obj) => <Message text={obj.text} align={obj.align} key={obj.index} colour={obj.colour} textColour={obj.textColour} />);
 
         return (
             <>
                 <Typography variant="h5" style={{ color: "#000000" }}>
                     <strong>My Buddy</strong>
                 </Typography>
-                <Paper elevation={3} style={{ height: "80vh" }}>
+                <Box boxShadow={15} borderRadius={10} style={{ height: "80vh", padding: "2%" }}>
 
-                    <Box style={{ height: "74.1vh" }}>
+                    <Box style={{ height: "95%" }}>
                         {messageObjects}
                     </Box>
 
                     <form noValidate autoComplete="off" onSubmit={this.forSubmit}>
-                        <TextField id="outlined-basic" variant="outlined" size="small" value={this.state.currentMessage} onChange={this.changeText} style={{width: "90%"}}/>
-                        <Button variant="contained" color="primary" style={{width: "7%", marginLeft: "1%"}} onClick={()=>this.clickSend()}>SEND</Button>
+                        <TextField id="outlined-basic" variant="outlined" size="small" value={this.state.currentMessage} onChange={this.changeText} style={{ width: "90%" }} />
+                        <Button variant="contained" color="primary" style={{ width: "7%", marginLeft: "1%" }} onClick={() => this.clickSend()}>SEND</Button>
                     </form>
 
-                </Paper>
+                </Box>
             </>
         );
     }

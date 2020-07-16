@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Paper from '@material-ui/core/Paper';
+import Box from '@material-ui/core/Box';
 
 export default class Message extends React.Component {
 
@@ -9,17 +9,30 @@ export default class Message extends React.Component {
 
         this.alignment = props.align;
         this.text = props.text;
+        this.colour = props.colour;
+        this.textColour = props.textColour
     }
 
     render() {
+
+        var messageStyle = { 
+            maxWidth: "55%", 
+            minWidth: "5%", 
+            float: this.alignment, 
+            paddingTop: "0.7%", 
+            paddingBottom: "0.7%", 
+            paddingLeft: "1.2%", 
+            paddingRight: "1.2%", 
+            background: this.colour, 
+            color: this.textColour,
+        }
+
         return (
-            <>
-            <Paper variant="outlined" style={{ maxWidth: "75%", minWidth: "25%", float: this.alignment, padding: "0.5%" }}>
-                {this.text}
-            </Paper>
-            <br></br>
-            <br></br>
-            </>
+            <Box display="block" style={{width: "100%", float: this.alignment, padding: "0.1%"}}>
+                <Box variant="outlined" borderRadius={10} style={messageStyle}>
+                    {this.text}
+                </Box>
+            </Box>
         );
     }
 }
