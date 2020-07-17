@@ -9,7 +9,7 @@ import AddService from "./AddService";
 const services = [
     {
         src: "keeper.jpg",
-        text: "Jobkeeper"
+        text: "NSW Health Alerts"
     },
     {
         src: "liquor.jpg",

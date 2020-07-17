@@ -17,7 +17,7 @@ export default class Message extends React.Component {
 
         var messageStyle = { 
             maxWidth: "55%", 
-            minWidth: "5%", 
+            minWidth: "2%", 
             float: this.alignment, 
             paddingTop: "0.7%", 
             paddingBottom: "0.7%", 

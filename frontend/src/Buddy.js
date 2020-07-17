@@ -12,7 +12,7 @@ const initialMessages = [
     "I'm your Business Buddy 🐨",
     "I can help you manage your business.",
     "With me, you can keep track of services you are using, receive notifications tailored to your business needs, and find out information about health advice and business grants.",
-    "First of all, I need a few basic bits of information.",
+    "To get started, I need a few basic bits of information about your business.",
     "All data is securely stored in Australia, and you can change or delete anything you want later on from the Settings tab at the top right.",
     "Where is your business based?",
 ]
@@ -100,6 +100,10 @@ export default class Buddy extends React.Component {
             // Last message came from user
             if (this.state.lastBudyMessage === "Where is your business based?") {
                 this.addBuddyMessage("What industry is your business a part of?");
+            }
+
+            if (this.state.lastBudyMessage === "What industry is your business a part of?") {
+                this.addBuddyMessage("Awesome! Try asking me about what grants you might be eligible for, or what the current NSW Health regulations are for your business.");
             }
         }
 
