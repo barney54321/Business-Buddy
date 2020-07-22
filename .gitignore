@@ -2,6 +2,7 @@
 
 # dependencies
 frontend/node_modules
+frontend/build
 /node_modules
 /.pnp
 .pnp.js
@@ -25,3 +26,4 @@ yarn-debug.log*
 yarn-error.log*
 
 frontend/.env
+.env
