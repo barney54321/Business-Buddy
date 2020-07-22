@@ -9,6 +9,20 @@ import LoadingMessage from "./LoadingMessage";
 
 import axios from "axios";
 
+const gapBetweenMessages = 2000;
+
+const potentialServices = {
+    "NSW Compliance Measures": "https://www.nsw.gov.au/covid-19/what-you-can-and-cant-do-under-rules",
+    "Industry Guidelines": "https://www.nsw.gov.au/covid-19/industry-guidelines/restaurants-cafes-food-courts",
+    "Small Business Recovery Grant": "https://www.service.nsw.gov.au/transaction/apply-small-business-covid-19-recovery-grant",
+}
+
+function titleCase(str) {
+    return str.toLowerCase().split(' ').map(function (word) {
+        return word.replace(word[0], word[0].toUpperCase());
+    }).join(' ');
+}
+
 export default class Buddy extends React.Component {
 
     constructor(props) {
@@ -62,7 +76,7 @@ export default class Buddy extends React.Component {
             // Start conversation
             let url = "/api/message";
 
-            this.setState({firstMessage: true});
+            this.setState({ firstMessage: true });
 
             if (business.name === undefined || business.name === null) {
                 // Tell Assistant to go through initiation and opening questions
@@ -70,11 +84,11 @@ export default class Buddy extends React.Component {
                     sessionId: this.state.sessionId,
                     text: "yes",
                 }
-    
+
                 axios.post(url, postData).then((res) => {
                     let responses = res.data.output.generic;
                     for (var i = 0; i < responses.length; i++) {
-                        this.addBuddyMessage(responses[i].text);
+                        setTimeout(this.addBuddyMessage, i * gapBetweenMessages, responses[i].text);
                     }
                 });
             } else {
@@ -83,9 +97,9 @@ export default class Buddy extends React.Component {
                     sessionId: this.state.sessionId,
                     text: "no",
                 }
-    
+
                 axios.post(url, postData).then((a) => {
-                    postData.text = business.postcode + ", " + business.employee_count + ", " + business.financial_help + ", " + business.fall_in_turnover + ", " + newAlerts.toString();
+                    postData.text = business.postcode + ", " + business.employee_count + ", " + newAlerts.toString();
                     axios.post(url, postData).then((b) => {
                         postData.text = business.industry;
                         axios.post(url, postData).then((c) => {
@@ -93,7 +107,7 @@ export default class Buddy extends React.Component {
                             axios.post(url, postData).then((res) => {
                                 let responses = res.data.output.generic;
                                 for (var i = 0; i < responses.length; i++) {
-                                    this.addBuddyMessage(responses[i].text);
+                                    setTimeout(this.addBuddyMessage, i * gapBetweenMessages, responses[i].text);
                                 }
                             })
                         })
@@ -101,7 +115,7 @@ export default class Buddy extends React.Component {
                 });
             }
         });
-    } 
+    }
 
     // Adds a message from the Assistant
     addBuddyMessage = (message) => {
@@ -131,44 +145,46 @@ export default class Buddy extends React.Component {
 
         if (this.state.lastBudyMessage === "What is the name of your business?") {
             // Set business name
-            let newBusiness = {...this.props.business};
+            let newBusiness = { ...this.props.business };
             newBusiness.name = this.state.currentMessage;
             this.props.updateBusiness(newBusiness);
         }
 
         if (this.state.lastBudyMessage === "Please enter the postcode your business is based in (e.g. 2000)") {
             // Set business postcode
-            let newBusiness = {...this.props.business};
+            let newBusiness = { ...this.props.business };
             newBusiness.postcode = this.state.currentMessage;
             this.props.updateBusiness(newBusiness);
         }
 
         if (this.state.lastBudyMessage === "Please enter the industry your business is in (e.g. taxi, retail, restaurant)") {
             // Set business industry
-            let newBusiness = {...this.props.business};
+            let newBusiness = { ...this.props.business };
             newBusiness.industry = this.state.currentMessage;
             this.props.updateBusiness(newBusiness);
         }
 
         if (this.state.lastBudyMessage === "Please enter the number of employees your business has (e.g. 20)") {
             // Set business employee count
-            let newBusiness = {...this.props.business};
+            let newBusiness = { ...this.props.business };
             newBusiness.employee_count = this.state.currentMessage;
             this.props.updateBusiness(newBusiness);
         }
 
-        if (this.state.lastBudyMessage === "Please specify whether you are receiving other government financial help (yes/no)") {
-            // Set business government assistance
-            let newBusiness = {...this.props.business};
-            newBusiness.financial_help = this.state.currentMessage;
-            this.props.updateBusiness(newBusiness);
-        }
+        // Check if user has specified to add service
+        if (this.state.lastBudyMessage.includes("Would you like to add") && this.state.currentMessage.toLowerCase() === "yes") {
+            var service = this.state.lastBudyMessage.slice();
 
-        if (this.state.lastBudyMessage === "Please enter your fall in turnover between March to July 2020 compared to an equivalent period as a percentage (e.g. 25)") {
-            // Set business fall in turnover
-            let newBusiness = {...this.props.business};
-            newBusiness.fall_in_turnover = this.state.currentMessage;
-            this.props.updateBusiness(newBusiness);
+            // Get rid of the start and end bits
+            service = service.replace("Would you like to add ", "");
+            service = service.replace(" to My Services? (yes/no)", "");
+            service = titleCase(service);
+            service = service.replace("Nsw", "NSW");
+
+            this.props.addService({
+                name: service,
+                link: potentialServices[service] || "www.google.com",
+            });
         }
 
         var messages = this.state.messages;
@@ -199,7 +215,7 @@ export default class Buddy extends React.Component {
         axios.post(url, postData).then((res) => {
             let responses = res.data.output.generic;
             for (var i = 0; i < responses.length; i++) {
-                this.addBuddyMessage(responses[i].text);
+                setTimeout(this.addBuddyMessage, i * gapBetweenMessages, responses[i].text);
             }
         });
     }
@@ -221,7 +237,7 @@ export default class Buddy extends React.Component {
 
         var loadingMessage = <></>;
         if (this.state.messages.length === 0 || this.state.messages[this.state.messages.length - 1].buddyMessage === false) {
-            loadingMessage = <LoadingMessage/>
+            loadingMessage = <LoadingMessage />
         }
 
         return (
@@ -231,7 +247,7 @@ export default class Buddy extends React.Component {
                 </Typography>
                 <Box boxShadow={5} borderRadius={10} style={{ height: "80vh", padding: "2%" }}>
 
-                    <Box id="messageBody" style={{ height: "93%", overflowY: "auto", overflowX: "hidden", display: "flex", flexDirection: "column-reverse", paddingBottom: "2%" }}> 
+                    <Box id="messageBody" style={{ height: "93%", overflowY: "auto", overflowX: "hidden", display: "flex", flexDirection: "column-reverse", paddingBottom: "2%" }}>
                         {loadingMessage}
                         {messageObjects}
                     </Box>

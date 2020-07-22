@@ -55,7 +55,7 @@ export default function Services(props) {
             <Typography variant="h5" style={{ color: "#000000", paddingBottom: "3%", paddingLeft: "2%" }}>
                 <strong>My Services</strong>
             </Typography>
-            <Grid container spacing={3} style={{overflowY: "auto", height: "85vh", backgroundColor: "#FFFFFF"}}>
+            <Grid container spacing={3} style={{overflowY: "auto", height: "auto", maxHeight: "85vh", backgroundColor: "#FFFFFF"}}>
                 {services.map((val, index) =>
                     <Service val={val} key={index} color={colors[index % colors.length]}></Service>
                 )}

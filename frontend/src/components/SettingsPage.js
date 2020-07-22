@@ -19,20 +19,12 @@ const SettingsPage = (props) => {
         let industry = document.getElementById("set_industry").value;
         let postcode = document.getElementById("set_postcode").value;
         let employees = document.getElementById("set_employees").value;
-        let assistance = document.getElementById("set_assistance").value;
-        let turnover = document.getElementById("set_turnover").value;
 
         var newBusiness = {...business};
         newBusiness.name = name;
         newBusiness.industry = industry;
         newBusiness.postcode = postcode;
         newBusiness.employee_count = employees;
-
-        if (assistance.toLowerCase() === "yes" || assistance.toLowerCase() === "no") {
-            newBusiness.financial_help = assistance;
-        }
-        
-        newBusiness.fall_in_turnover = turnover;
 
         props.updateBusiness(newBusiness);
     }
@@ -49,16 +41,12 @@ const SettingsPage = (props) => {
     var industry = "";
     var postcode = "";
     var employees = "";
-    var assistance = "";
-    var turnover = "";
 
     if (business != null && business.name !== undefined) {
         name = business.name  || name;
         industry = business.industry  || industry;
         postcode = business.postcode  || postcode;
         employees = business.employee_count  || employees;
-        assistance = business.financial_help  || assistance;
-        turnover = business.fall_in_turnover || turnover;
     } else {
         return <></>
     }
@@ -121,20 +109,6 @@ const SettingsPage = (props) => {
                         </Box>
                         <Box component="div" display="inline-block" p={0} m={0} width="55%">
                             <TextField id="set_employees" type="number" defaultValue={employees} InputProps={{ disableUnderline: true }} />
-                        </Box>
-
-                        <Box component="div" display="inline-block" p={0} m={0} width="35%">
-                            <TextField disabled defaultValue="GOVT. ASSISTANCE: " InputProps={{ disableUnderline: true }} />
-                        </Box>
-                        <Box component="div" display="inline-block" p={0} m={0} width="55%">
-                            <TextField id="set_assistance" defaultValue={assistance} InputProps={{ disableUnderline: true }} />
-                        </Box>
-
-                        <Box component="div" display="inline-block" p={0} m={0} width="35%">
-                            <TextField disabled defaultValue="FALL IN TURNOVER: " InputProps={{ disableUnderline: true }} />
-                        </Box>
-                        <Box component="div" display="inline-block" p={0} m={0} width="55%">
-                            <TextField id="set_turnover" type="number" defaultValue={turnover.replace(/\D/g, '')} InputProps={{ disableUnderline: true, inputProps: { max: 100, min: 0 } }} />
                         </Box>
 
                         <Box component="div" display="block" p={0} m={0} width="35%">

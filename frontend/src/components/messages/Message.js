@@ -30,6 +30,10 @@ export default class Message extends React.Component {
 
         var contents = this.text;
 
+        if (contents === undefined) {
+            return <></>;
+        }
+
         if (contents.includes("LINK: ")) {
             // Hyperlink
             var text = contents.slice();

@@ -51,11 +51,9 @@ const AddService = (props) => {
         handleClose();
     }
 
-    // var clickAdd = props.clickAdd;
-
     return (
 
-        <Grid item xs={6}>
+        <Grid item xs={6} style={{height: 250}}>
             <Box onClick={handleClickOpen} className={classes.paper} boxShadow={5} borderRadius={10} style={{ verticalAlign: "middle" }}>
                 <AddIcon fontSize="large" style={{ marginTop: "45%" }} />
             </Box>

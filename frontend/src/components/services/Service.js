@@ -23,8 +23,8 @@ const Service = (props) => {
     }
     return (
         
-        <Grid item xs={6}>
-            <Box onClick={handleClick} style={style} boxShadow={5} borderRadius={10}>
+        <Grid item xs={6} style={{height: 250}}>
+            <Box onClick={handleClick} style={style} boxShadow={5} borderRadius={10} m={0}>
                 <div style={{height: "50%"}}></div>
                 <Box style={{color: "#000000", textAlign: "left", padding: "3%", backgroundColor: "#FFFFFF", height: "30%"}}>
                     <Typography variant="subtitle1" style={{color: "#000000", textAlign: "left"}}>
