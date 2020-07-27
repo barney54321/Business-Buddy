@@ -1,0 +1,4513 @@
+{
+    "intents": [
+      {
+        "intent": "physical-distancing-restaurants",
+        "examples": [
+          {
+            "text": "guidelines for delivery for restaurants, cafe, and foodcourts"
+          },
+          {
+            "text": "physical distancing in food courts"
+          },
+          {
+            "text": "how many people in a cafe"
+          },
+          {
+            "text": "how many people in a restaurant"
+          },
+          {
+            "text": "how many people in a food court"
+          },
+          {
+            "text": "space in restaurants, cafe, and food courts"
+          },
+          {
+            "text": "What are the rules for physical distancing in restaurants"
+          },
+          {
+            "text": "physical distancing in restaurants"
+          },
+          {
+            "text": "physical distancing in cafe"
+          }
+        ],
+        "description": "Physical distancing guidelines for restaurants"
+      },
+      {
+        "intent": "export-assistance-grant",
+        "examples": [
+          {
+            "text": "what is export assistance grant"
+          },
+          {
+            "text": "how much is export assistance grant"
+          },
+          {
+            "text": "eligibility for export assistance grant"
+          },
+          {
+            "text": "how would the export assistance grant be assessed"
+          },
+          {
+            "text": "is export assistance grant for small businesses?"
+          }
+        ],
+        "description": "Information on export assistance grant"
+      },
+      {
+        "intent": "General_Agent_Capabilities",
+        "examples": [
+          {
+            "text": "Can you tell me what services you are able to help me with?"
+          },
+          {
+            "text": "Where can I find the frequently asked questions?"
+          },
+          {
+            "text": "What kinds of things can you do?"
+          },
+          {
+            "text": "What is this 4?"
+          },
+          {
+            "text": "What features are in here?"
+          },
+          {
+            "text": "What else can you help me with?"
+          },
+          {
+            "text": "What do you handle?"
+          },
+          {
+            "text": "What do you do?"
+          },
+          {
+            "text": "What can I ask you to do?"
+          },
+          {
+            "text": "What are your skills?"
+          },
+          {
+            "text": "What are you used for?"
+          },
+          {
+            "text": "What are you good at?"
+          },
+          {
+            "text": "What are you capable of?"
+          },
+          {
+            "text": "What are you able to understand?"
+          },
+          {
+            "text": "What are you able to deal with?"
+          },
+          {
+            "text": "What are my options?"
+          },
+          {
+            "text": "What are my options that you can help with?"
+          },
+          {
+            "text": "Tell me something"
+          },
+          {
+            "text": "Tell me about what kind of things you do?"
+          },
+          {
+            "text": "Is there anything you can help me with?"
+          },
+          {
+            "text": "I'd like to know what type of questions you can answer for me."
+          },
+          {
+            "text": "I do not know what to ask"
+          },
+          {
+            "text": "How do I use you?"
+          },
+          {
+            "text": "How can you solve my problems?"
+          },
+          {
+            "text": "How can you help me?"
+          },
+          {
+            "text": "How can I use you?"
+          },
+          {
+            "text": "Hi, what do you do?"
+          },
+          {
+            "text": "Help now"
+          },
+          {
+            "text": "Do you have a list of things I can talk to you about?"
+          },
+          {
+            "text": "Can you please give me a list of the types of things you can help me with?"
+          }
+        ],
+        "description": "Request capabilities of the bot."
+      },
+      {
+        "intent": "SME-guarantee-scheme",
+        "examples": [
+          {
+            "text": "SME guarantee scheme"
+          },
+          {
+            "text": "Who is the SME Guarantee Scheme for?"
+          },
+          {
+            "text": "When does the SME Guarantee Scheme start?"
+          },
+          {
+            "text": "When does the SME Guarantee Scheme end?"
+          },
+          {
+            "text": "What is SME Guarantee Scheme?"
+          }
+        ],
+        "description": "General information on SME guarantee scheme"
+      },
+      {
+        "intent": "small-business-recovery-grant-purpose",
+        "examples": [
+          {
+            "text": "what can the recovery grant be used for"
+          },
+          {
+            "text": "how can business spend the recovery grant"
+          },
+          {
+            "text": "how can the recovery grant be used"
+          },
+          {
+            "text": "where can the recovery grant be used on"
+          },
+          {
+            "text": "purpose of small business recovery grant"
+          }
+        ],
+        "description": "How the small business recovery grant can be used"
+      },
+      {
+        "intent": "specify-industry",
+        "examples": []
+      },
+      {
+        "intent": "small-business-recovery-grant-apply-step",
+        "examples": [
+          {
+            "text": "How to apply for small business recovery grant"
+          },
+          {
+            "text": "recovery grant application"
+          },
+          {
+            "text": "recovery grant how to apply"
+          },
+          {
+            "text": "How to apply for recovery grant"
+          },
+          {
+            "text": "What are the steps to apply for recovery grant"
+          }
+        ],
+        "description": "Apply steps for small business recovery grant"
+      },
+      {
+        "intent": "help",
+        "examples": [
+          {
+            "text": "what do i enter"
+          },
+          {
+            "text": "help me"
+          },
+          {
+            "text": "assist me"
+          },
+          {
+            "text": "help"
+          },
+          {
+            "text": "help page"
+          }
+        ],
+        "description": "Help me page"
+      },
+      {
+        "intent": "job-keeper-eligible-employers",
+        "examples": [
+          {
+            "text": "can my business apply for JobKeeper"
+          },
+          {
+            "text": "what is the turnover criteria for jobkeeper"
+          },
+          {
+            "text": "what businesses are ineligible for JobKeeper"
+          },
+          {
+            "text": "can religious institutions apply for JobKepper"
+          },
+          {
+            "text": "can sole trader apply"
+          },
+          {
+            "text": "what are the eligibility for a business to apply"
+          },
+          {
+            "text": "eligibility for employers"
+          },
+          {
+            "text": "what types of businesses are eligible?"
+          }
+        ],
+        "description": "Eligibility for employers"
+      },
+      {
+        "intent": "taxi-support-package-eligibility",
+        "examples": [
+          {
+            "text": "who can apply for taxi industry support package"
+          },
+          {
+            "text": "requirements to apply for taxi support package"
+          },
+          {
+            "text": "eligibility for taxi support package"
+          },
+          {
+            "text": "taxi support package eligiblity"
+          }
+        ],
+        "description": "Eligibility for taxi industry support package"
+      },
+      {
+        "intent": "General_About_You",
+        "examples": [
+          {
+            "text": "Describe your self"
+          },
+          {
+            "text": "About you"
+          },
+          {
+            "text": "Can I use another language?"
+          },
+          {
+            "text": "Do you have a name?"
+          },
+          {
+            "text": "Do you know who you are?"
+          },
+          {
+            "text": "How can I configure you?"
+          },
+          {
+            "text": "How do you function?"
+          },
+          {
+            "text": "How old are you?"
+          },
+          {
+            "text": "I want to set up the chat bot for my shop"
+          },
+          {
+            "text": "Introduce your self"
+          },
+          {
+            "text": "Let us talk about you"
+          },
+          {
+            "text": "Tell me about your life"
+          },
+          {
+            "text": "Tell me something about yourself"
+          },
+          {
+            "text": "What languages do you speak?"
+          },
+          {
+            "text": "What should I know about you?"
+          },
+          {
+            "text": "What's your name?"
+          },
+          {
+            "text": "Where are you from?"
+          },
+          {
+            "text": "Where were you born?"
+          },
+          {
+            "text": "Who are you?"
+          },
+          {
+            "text": "Why are you here?"
+          }
+        ],
+        "description": "Request generic personal attributes."
+      },
+      {
+        "intent": "hygiene-cleaning-restaurant",
+        "examples": [
+          {
+            "text": "can restaurants serve buffet"
+          },
+          {
+            "text": "menu guidelines"
+          },
+          {
+            "text": "what are the hygiene and cleaning guidelines for cafe, food court and restaurants"
+          },
+          {
+            "text": "cleaning restaurant, cafe and food court"
+          },
+          {
+            "text": "hygiene and cleaning practices for restaurants"
+          }
+        ],
+        "description": "Hygiene and cleaning practices for restaurants"
+      },
+      {
+        "intent": "sole-trader-jobseeker",
+        "examples": [
+          {
+            "text": "Can sole traders apply for JobSeeker"
+          },
+          {
+            "text": "requirements for sole trader applying for JobSeeker payments"
+          },
+          {
+            "text": "access to JobSeeker payments for sole traders"
+          },
+          {
+            "text": "eligibility for sole traders to apply for JobSeeker payments"
+          },
+          {
+            "text": "sole traders apply for JobSeeker"
+          }
+        ],
+        "description": "JobSeeker payment for sole traders "
+      },
+      {
+        "intent": "small-business-recovery-grant",
+        "examples": [
+          {
+            "text": "what is recovery grant"
+          },
+          {
+            "text": "What is the recovery grant for?"
+          },
+          {
+            "text": "recovery grant"
+          },
+          {
+            "text": "what is small business recovery grant"
+          },
+          {
+            "text": "How much is small business recovery grant"
+          }
+        ],
+        "description": "General information for Small Business Recovery Grant"
+      },
+      {
+        "intent": "eletricity-gas-network-relief",
+        "examples": [
+          {
+            "text": "how long is the electricity and gas network relief package effective for?"
+          },
+          {
+            "text": "who are the participating networks in the electricity and gas network relief package?"
+          },
+          {
+            "text": "electricity and gas network relief package"
+          },
+          {
+            "text": "eligibility for electricity and gas network relief package"
+          },
+          {
+            "text": "who can apply for electricity and gas network relief package?"
+          }
+        ],
+        "description": "Information on electricity and gas network relief package"
+      },
+      {
+        "intent": "jobKeeper-paying-employees",
+        "examples": [
+          {
+            "text": "What if the employee earn less then the JobKeeper amount"
+          },
+          {
+            "text": "Is superannuation included in the JobKeeper payment?"
+          },
+          {
+            "text": "JobKeeper and operation on cash accounting basis"
+          },
+          {
+            "text": "JobKeeper and accruals basis"
+          },
+          {
+            "text": "Is the JobKeeper payment subject to tax?"
+          },
+          {
+            "text": "What are the payments that does not count towards JobKeeper"
+          },
+          {
+            "text": "What are the payments count towards JobKeeper"
+          },
+          {
+            "text": "Can I pay my employees monthly?"
+          },
+          {
+            "text": "When to pay the employees"
+          },
+          {
+            "text": "What does the JobKeeper cover?"
+          },
+          {
+            "text": "How much to pay eligible employees"
+          },
+          {
+            "text": "How to pay eligible employees"
+          }
+        ],
+        "description": "Information on businesses paying eligible employees"
+      },
+      {
+        "intent": "support4work-grant",
+        "examples": [
+          {
+            "text": "eligibility for support4work grant"
+          },
+          {
+            "text": "support4work grant"
+          },
+          {
+            "text": "how much is support4work grant"
+          },
+          {
+            "text": "what is support4work grant"
+          },
+          {
+            "text": "support for business with injured workers"
+          }
+        ],
+        "description": "Support4work grant"
+      },
+      {
+        "intent": "small-business-recovery-grant-eligibility-documentation",
+        "examples": [
+          {
+            "text": "what are the documents needed to apply for the recovery grant"
+          },
+          {
+            "text": "documents for small business recovery grant"
+          },
+          {
+            "text": "who is eligible for recovery grant"
+          },
+          {
+            "text": "documents required for recovery grant"
+          },
+          {
+            "text": "evidence in support of eligibility to apply for small business recovery grant"
+          },
+          {
+            "text": "documents need to be presented when applying recovery grant"
+          }
+        ],
+        "description": "Evidence needed in support of eligibility to apply for small business recovery grant"
+      },
+      {
+        "intent": "sport-recovery-package",
+        "examples": [
+          {
+            "text": "what is the community sport recovery package"
+          },
+          {
+            "text": "how much is the sport recovery pakcage"
+          },
+          {
+            "text": "support for local sport clubs"
+          },
+          {
+            "text": "eligibility for sport recovery pakcage"
+          },
+          {
+            "text": "support for community sport"
+          },
+          {
+            "text": "sport recovery pakcage"
+          }
+        ],
+        "description": "Community sport recovery package"
+      },
+      {
+        "intent": "job-keeper-employee-eligibility",
+        "examples": [
+          {
+            "text": "can workers with temporary visa receive JobKeeper?"
+          },
+          {
+            "text": "Can a worker receive JobKeeper from more than one employer?"
+          },
+          {
+            "text": "Eligibility for workers"
+          },
+          {
+            "text": "who can receive JobKeeper payment"
+          },
+          {
+            "text": "eligibility for employees"
+          }
+        ],
+        "description": "Eligibility for Employees"
+      },
+      {
+        "intent": "SME-gaurantee-scheme-loan",
+        "examples": [
+          {
+            "text": "Is the SME guarantee scheme an unsecured loan?"
+          },
+          {
+            "text": "Is the SME guarantee scheme a secured loan?"
+          },
+          {
+            "text": "How much is the loan for the SME guarantee scheme?"
+          },
+          {
+            "text": "How does the interest work for SME guarantee scheme?"
+          },
+          {
+            "text": "How long is the loan for SME guarantee scheme?"
+          }
+        ],
+        "description": "Information on loans and interests for SME guarantee scheme"
+      },
+      {
+        "intent": "Facebook-small-business-grants",
+        "examples": [
+          {
+            "text": "apply for Facebook business grant"
+          },
+          {
+            "text": "what is Facebook small business grants program"
+          },
+          {
+            "text": "Facebook small business grants program"
+          },
+          {
+            "text": "eligibility for Facebook grant"
+          },
+          {
+            "text": "how much is the Facebook business grant?"
+          }
+        ],
+        "description": "Facebook small business grants program"
+      },
+      {
+        "intent": "General_Human_or_Bot",
+        "examples": [
+          {
+            "text": "Tell me, are you a human or no?"
+          },
+          {
+            "text": "Is this a computer?"
+          },
+          {
+            "text": "How can you prove you are a human?"
+          },
+          {
+            "text": "Are you real?"
+          },
+          {
+            "text": "Are you human?"
+          },
+          {
+            "text": "Are you even real?"
+          },
+          {
+            "text": "Are you a robot?"
+          },
+          {
+            "text": "Are you a human or a bot?"
+          },
+          {
+            "text": "Am I talking to a person or am I talking to an AI?"
+          },
+          {
+            "text": "Am I talking to a Bot?"
+          },
+          {
+            "text": "Am I talking to Watson?"
+          },
+          {
+            "text": "Am I chatting with a human?"
+          }
+        ],
+        "description": "Ask if speaking to a human or a bot."
+      },
+      {
+        "intent": "General_Positive_Feedback",
+        "examples": [
+          {
+            "text": "You're a genius!"
+          },
+          {
+            "text": "You are great"
+          },
+          {
+            "text": "You are the best"
+          },
+          {
+            "text": "You are wonderful"
+          },
+          {
+            "text": "You gave me exactly what I need!"
+          },
+          {
+            "text": "You the man"
+          },
+          {
+            "text": "You've been so helpful :)"
+          },
+          {
+            "text": "Brilliant!"
+          },
+          {
+            "text": "Can't believe you are that good"
+          },
+          {
+            "text": "How cool is this?"
+          },
+          {
+            "text": "I like what you did there! :)"
+          },
+          {
+            "text": "I'm looking forward to working with you again! :)"
+          },
+          {
+            "text": "Love your work"
+          },
+          {
+            "text": "Ok thank you"
+          },
+          {
+            "text": "Thank you"
+          },
+          {
+            "text": "This is good"
+          },
+          {
+            "text": "This is great"
+          },
+          {
+            "text": "This is so cool"
+          },
+          {
+            "text": "You are awesome"
+          }
+        ],
+        "description": "Express positive sentiment or gratitude."
+      },
+      {
+        "intent": "search-grant-name",
+        "examples": [
+          {
+            "text": "search grant by the name"
+          },
+          {
+            "text": "get grant information by name"
+          },
+          {
+            "text": "searching up grant by name"
+          },
+          {
+            "text": "search grant name"
+          },
+          {
+            "text": "look up grant by name"
+          }
+        ],
+        "description": "Searching up grant by name"
+      },
+      {
+        "intent": "financial-institution-support",
+        "examples": [
+          {
+            "text": "deferral payments for business owners"
+          },
+          {
+            "text": "support from banks for business owners"
+          },
+          {
+            "text": "how long can the payment be deferred by the bank"
+          },
+          {
+            "text": "eligibility for deferral of payments to the bank"
+          },
+          {
+            "text": "bank extending deferred payments"
+          }
+        ],
+        "description": "Support for businesses from financial institutions"
+      },
+      {
+        "intent": "General_Connect_to_Agent",
+        "examples": [
+          {
+            "text": "Pls connect"
+          },
+          {
+            "text": "Please let me talk to a human being."
+          },
+          {
+            "text": "Please connect me to a live agent"
+          },
+          {
+            "text": "Please assist me to get to an agent"
+          },
+          {
+            "text": "Operator please"
+          },
+          {
+            "text": "Need help from human"
+          },
+          {
+            "text": "Is there anyone there I can actually talk to for real?"
+          },
+          {
+            "text": "I would like to speak to someone"
+          },
+          {
+            "text": "I would like to speak to a human"
+          },
+          {
+            "text": "I want to talk to a person"
+          },
+          {
+            "text": "I want an agent to help me"
+          },
+          {
+            "text": "I want agent"
+          },
+          {
+            "text": "I want a manager"
+          },
+          {
+            "text": "I need to speak to a representative. How would I go about doing so?"
+          },
+          {
+            "text": "I don't want to talk to you"
+          },
+          {
+            "text": "I don't want to talk to a bot."
+          },
+          {
+            "text": "How can I skip the recorded menu and go straight to a live person?"
+          },
+          {
+            "text": "Hi can you transfer me"
+          },
+          {
+            "text": "Do not want a robot?"
+          },
+          {
+            "text": "Customer service representative please."
+          },
+          {
+            "text": "Could you please transfer me to your master?"
+          },
+          {
+            "text": "Contact person"
+          },
+          {
+            "text": "Connect me to a live operator please."
+          },
+          {
+            "text": "Can you connect me with a real person?"
+          },
+          {
+            "text": "Can you assist me to connect to an agent?"
+          },
+          {
+            "text": "Can I talk to someone?"
+          },
+          {
+            "text": "Can I speak with somebody?"
+          },
+          {
+            "text": "Can I speak to an advisor?"
+          },
+          {
+            "text": "Can I speak to a live person?"
+          },
+          {
+            "text": "Can I speak to a human please?"
+          },
+          {
+            "text": "Can I connect to an agent?"
+          },
+          {
+            "text": "Call agent"
+          },
+          {
+            "text": "Agent help"
+          },
+          {
+            "text": "A real agent, please."
+          },
+          {
+            "text": "Put me through to someone"
+          },
+          {
+            "text": "Send me to an agent"
+          },
+          {
+            "text": "Where is the closest agent?"
+          },
+          {
+            "text": "Yes, take me to a real person"
+          }
+        ],
+        "description": "Request a human agent."
+      },
+      {
+        "intent": "General_Security_Assurance",
+        "examples": [
+          {
+            "text": "Is my payment information secure?"
+          },
+          {
+            "text": "Can I be sure that my stored card details are held securely?"
+          },
+          {
+            "text": "Are you safe on hackers?"
+          },
+          {
+            "text": "Are you safe?"
+          },
+          {
+            "text": "Will my conversation remain secured?"
+          },
+          {
+            "text": "Why would I trust this chat?"
+          },
+          {
+            "text": "What safety measures are used to ensure that chat is secure?"
+          },
+          {
+            "text": "What makes this chat trustworthy?"
+          },
+          {
+            "text": "What guards do you have in place to protect your customer's data?"
+          },
+          {
+            "text": "Secure conversation?"
+          },
+          {
+            "text": "Protection hacks?"
+          },
+          {
+            "text": "Precautions hackers?"
+          },
+          {
+            "text": "Is this conversation secure?"
+          },
+          {
+            "text": "Is this an official chat?"
+          },
+          {
+            "text": "Is this a trusted chat site?"
+          },
+          {
+            "text": "Is there a reason to distrust this chat?"
+          },
+          {
+            "text": "Is my card info secure?"
+          },
+          {
+            "text": "In what way can I tell if my plastic is safe?"
+          },
+          {
+            "text": "I'd like proof of a secure chat"
+          },
+          {
+            "text": "How safe is my data?"
+          },
+          {
+            "text": "How is my credit card info secured?"
+          },
+          {
+            "text": "How do I know this chat is not a scam?"
+          },
+          {
+            "text": "How do I know if my card info is kept safe?"
+          },
+          {
+            "text": "Do you have protection against hacks?"
+          },
+          {
+            "text": "Customer info secured?"
+          },
+          {
+            "text": "Conversation secure?"
+          }
+        ],
+        "description": "Express concerns about the security of the bot."
+      },
+      {
+        "intent": "small-business-recovery-funding",
+        "examples": [
+          {
+            "text": "how much is recovery grant"
+          },
+          {
+            "text": "what is the amount of small business recovery grant"
+          },
+          {
+            "text": "how much is small business recovery grant"
+          },
+          {
+            "text": "What is the amount of recovery grant"
+          },
+          {
+            "text": "Small business recovery grant funding"
+          }
+        ],
+        "description": "Small business recovery grant funding"
+      },
+      {
+        "intent": "wellbeing-restaurants",
+        "examples": [
+          {
+            "text": "what happens when staff are sick"
+          },
+          {
+            "text": "wellbeing of staff for restaurants"
+          },
+          {
+            "text": "training for staff in restaurants for covid19"
+          },
+          {
+            "text": "Can staff who are sick still work?"
+          },
+          {
+            "text": "guidelines for the wellbeing of staff and customers"
+          }
+        ],
+        "description": "Wellbeing of staff and customers for restaurant industry guidelines"
+      },
+      {
+        "intent": "superannuation-sole-traders",
+        "examples": [
+          {
+            "text": "access superannuation for sole traders"
+          },
+          {
+            "text": "eligibility to access superannuation for sole traders"
+          },
+          {
+            "text": "criteria to apply for accessing superannuation for sole traders"
+          },
+          {
+            "text": "financial assistance for sole traders"
+          },
+          {
+            "text": "how much can sole traders access their superannuation?"
+          },
+          {
+            "text": "is the withdrawals for the sole trader superannuation tax free?"
+          }
+        ],
+        "description": "Accessing superannuation for sole traders"
+      },
+      {
+        "intent": "General_Ending",
+        "examples": [
+          {
+            "text": "I d like to stop doing this"
+          },
+          {
+            "text": "I have got to go"
+          },
+          {
+            "text": "I want to quit"
+          },
+          {
+            "text": "I'm done"
+          },
+          {
+            "text": "Im done"
+          },
+          {
+            "text": "Good. bye."
+          },
+          {
+            "text": "Going now"
+          },
+          {
+            "text": "Go off"
+          },
+          {
+            "text": "Go away"
+          },
+          {
+            "text": "Get lost"
+          },
+          {
+            "text": "Finished now, good bye"
+          },
+          {
+            "text": "Ending this session"
+          },
+          {
+            "text": "End trial"
+          },
+          {
+            "text": "Cya later"
+          },
+          {
+            "text": "Catch you later"
+          },
+          {
+            "text": "Bye now"
+          },
+          {
+            "text": "Bye bye"
+          },
+          {
+            "text": "Goodbye"
+          },
+          {
+            "text": "Have a nice day?"
+          },
+          {
+            "text": "Hey bot go away"
+          },
+          {
+            "text": "I am leaving"
+          },
+          {
+            "text": "Im good thank you"
+          },
+          {
+            "text": "Thank you for your time"
+          },
+          {
+            "text": "Stop talking to me"
+          },
+          {
+            "text": "I'm leaving now"
+          },
+          {
+            "text": "It was nice chatting with you"
+          },
+          {
+            "text": "Ok goodbye"
+          },
+          {
+            "text": "See you later"
+          },
+          {
+            "text": "See you"
+          },
+          {
+            "text": "Shut up"
+          },
+          {
+            "text": "Stop doing this"
+          },
+          {
+            "text": "Time to go"
+          },
+          {
+            "text": "That's everything"
+          },
+          {
+            "text": "That is all"
+          },
+          {
+            "text": "Thanks very much, bye!"
+          },
+          {
+            "text": "Thanks, bye!"
+          },
+          {
+            "text": "I am out of here"
+          }
+        ],
+        "description": "End the conversation."
+      },
+      {
+        "intent": "General_Negative_Feedback",
+        "examples": [
+          {
+            "text": "Hate you"
+          },
+          {
+            "text": "You are very frustrating"
+          },
+          {
+            "text": "You are on my nerves"
+          },
+          {
+            "text": "You are having delusions"
+          },
+          {
+            "text": "Why are you stupid?"
+          },
+          {
+            "text": "Why are you so annoying?"
+          },
+          {
+            "text": "Stupid"
+          },
+          {
+            "text": "Robots are stupid"
+          },
+          {
+            "text": "Robots are boring"
+          },
+          {
+            "text": "Quit annoying me"
+          },
+          {
+            "text": "It is annoying"
+          },
+          {
+            "text": "I hate you"
+          },
+          {
+            "text": "Do not like you?"
+          },
+          {
+            "text": "Everyone hates you"
+          },
+          {
+            "text": "I hate this!"
+          },
+          {
+            "text": "I do not like you"
+          },
+          {
+            "text": "You do not seem smart"
+          },
+          {
+            "text": "You're too stupid"
+          },
+          {
+            "text": "You're really irritating"
+          },
+          {
+            "text": "You're really frustrating"
+          }
+        ],
+        "description": "Express unfavorable feedback."
+      },
+      {
+        "intent": "filter-grant-by-condition",
+        "examples": [
+          {
+            "text": "filter grant by condition"
+          },
+          {
+            "text": "98272, 15 May 2019"
+          }
+        ],
+        "description": "Helping the user to find grants"
+      },
+      {
+        "intent": "retail-industry-guidelines",
+        "examples": [
+          {
+            "text": "what are the retail industry guidelines"
+          },
+          {
+            "text": "retail covid 19 industry guidelines"
+          },
+          {
+            "text": "retail guidelines information"
+          },
+          {
+            "text": "retail industry guidelines"
+          },
+          {
+            "text": "retail industry guidelines general"
+          }
+        ],
+        "description": "Query for retail industry guidelines"
+      },
+      {
+        "intent": "emergency-cleaning-stimulus-package",
+        "examples": [
+          {
+            "text": "cleaning stimulus package"
+          },
+          {
+            "text": "who are eligible for the cleaning stimulus package?"
+          },
+          {
+            "text": "what is the emergency cleaning and stimulus package"
+          },
+          {
+            "text": "apply cleaning stimulus package"
+          },
+          {
+            "text": "who are the supplementary government cleaning contracts available for?"
+          }
+        ],
+        "description": "Emergency cleaning stimulus package"
+      },
+      {
+        "intent": "covid-safety-plan-restaurants",
+        "examples": [
+          {
+            "text": "what is the safety plan for cafe"
+          },
+          {
+            "text": "what is the covid safety plan for restaurants"
+          },
+          {
+            "text": "covid-19 safety plan for food court"
+          },
+          {
+            "text": "covid-19 safety plan for restaurants"
+          },
+          {
+            "text": "covid-19 safety plan for cafe"
+          },
+          {
+            "text": "what is the safety plan for dine in"
+          }
+        ],
+        "description": "Retrieving the COVID-19 Safety Plan for restaurants"
+      },
+      {
+        "intent": "taxi-support-package",
+        "examples": [
+          {
+            "text": "how much is the taxi support package"
+          },
+          {
+            "text": "what is the taxi support package for?"
+          },
+          {
+            "text": "support package for taxi drivers"
+          },
+          {
+            "text": "What is the taxi support package"
+          },
+          {
+            "text": "requirements to receive taxi industry support package"
+          }
+        ],
+        "description": "General information for taxi industry support package"
+      },
+      {
+        "intent": "independent-breweries-support",
+        "examples": [
+          {
+            "text": "eligibility for support for independent breweries"
+          },
+          {
+            "text": "are there support for breweries"
+          },
+          {
+            "text": "what is the support for independent breweires"
+          },
+          {
+            "text": "support for independent breweries"
+          },
+          {
+            "text": "IBA support"
+          },
+          {
+            "text": "breweries support"
+          }
+        ],
+        "description": "Support for independent breweries"
+      },
+      {
+        "intent": "query-industry-guidelines",
+        "examples": [
+          {
+            "text": "looking for information on industry guildelines"
+          },
+          {
+            "text": "industry guidelines"
+          }
+        ],
+        "description": "Querying industry guidelines"
+      },
+      {
+        "intent": "General_Greetings",
+        "examples": [
+          {
+            "text": "Good to see you"
+          },
+          {
+            "text": "You there"
+          },
+          {
+            "text": "Who is this?"
+          },
+          {
+            "text": "What's up?"
+          },
+          {
+            "text": "What's new?"
+          },
+          {
+            "text": "Ok take me back"
+          },
+          {
+            "text": "Looking good eve"
+          },
+          {
+            "text": "How r u?"
+          },
+          {
+            "text": "How is it going?"
+          },
+          {
+            "text": "How have you been?"
+          },
+          {
+            "text": "How are you today?"
+          },
+          {
+            "text": "How are things going?"
+          },
+          {
+            "text": "Hi there"
+          },
+          {
+            "text": "Hi advisor"
+          },
+          {
+            "text": "Hey you"
+          },
+          {
+            "text": "Hey twin"
+          },
+          {
+            "text": "Hey there"
+          },
+          {
+            "text": "Hey there all"
+          },
+          {
+            "text": "Hey how are you doing"
+          },
+          {
+            "text": "Hello"
+          },
+          {
+            "text": "Hello I am looking for some help here"
+          },
+          {
+            "text": "Hello Agent"
+          },
+          {
+            "text": "Have you been well?"
+          },
+          {
+            "text": "Greetings"
+          },
+          {
+            "text": "Good morning"
+          },
+          {
+            "text": "Good evening"
+          },
+          {
+            "text": "Good day"
+          }
+        ],
+        "description": "Greet the bot."
+      },
+      {
+        "intent": "small-business-support-grant",
+        "examples": [
+          {
+            "text": "can I still apply for small business support grant"
+          },
+          {
+            "text": "who can apply for small business support grant"
+          },
+          {
+            "text": "is small business support grant closed for application"
+          },
+          {
+            "text": "What is small business support grant"
+          },
+          {
+            "text": "How much is small business support grant"
+          },
+          {
+            "text": "small business support grant"
+          }
+        ],
+        "description": "Information on small business support grant"
+      },
+      {
+        "intent": "General_Jokes",
+        "examples": [
+          {
+            "text": "What do you do for fun?"
+          },
+          {
+            "text": "Tell me something funny"
+          },
+          {
+            "text": "Tell me a joke"
+          },
+          {
+            "text": "Surprise me with something hilarious"
+          },
+          {
+            "text": "Another joke"
+          },
+          {
+            "text": "Are there jokes?"
+          },
+          {
+            "text": "Do you have humor?"
+          },
+          {
+            "text": "I'm bored"
+          },
+          {
+            "text": "I want a joke"
+          },
+          {
+            "text": "I am getting bored"
+          },
+          {
+            "text": "Do you like humor?"
+          },
+          {
+            "text": "What is your favorite joke?"
+          },
+          {
+            "text": "Can you tell me a joke?"
+          },
+          {
+            "text": "Do you have a joke?"
+          },
+          {
+            "text": "Do you like fun?"
+          },
+          {
+            "text": "One more joke"
+          },
+          {
+            "text": "Can you tell a joke?"
+          }
+        ],
+        "description": "Request a joke."
+      },
+      {
+        "intent": "query-grant",
+        "examples": [
+          {
+            "text": "grants for businesses"
+          },
+          {
+            "text": "what are the grants available for businesses"
+          },
+          {
+            "text": "information for grants"
+          }
+        ],
+        "description": "Looking for information about grants"
+      },
+      {
+        "intent": "creative-kids-grants",
+        "examples": [
+          {
+            "text": "creative kids digital grants"
+          },
+          {
+            "text": "eligibility for creative kids grants"
+          },
+          {
+            "text": "when is the application open for creative kids grants"
+          },
+          {
+            "text": "how much is creative kids digital grants"
+          },
+          {
+            "text": "what is creative kids digital small business grants"
+          }
+        ],
+        "description": "Creative kids digital small business grants"
+      },
+      {
+        "intent": "restaurants-industry-guidelines",
+        "examples": [
+          {
+            "text": "food courts guildelines"
+          },
+          {
+            "text": "restaurant guidelines"
+          },
+          {
+            "text": "cafe guildelines"
+          },
+          {
+            "text": "industry guidelines for restaurants"
+          },
+          {
+            "text": "covid safety plan for restaurants, cafes and food courts"
+          },
+          {
+            "text": "rules for dine in"
+          },
+          {
+            "text": "what are the guidelines for dine in restaurants"
+          }
+        ],
+        "description": "Industry guidelines for restaurants, cafes, food courts"
+      },
+      {
+        "intent": "small-business-recovery-grant-eligibility",
+        "examples": [
+          {
+            "text": "Small business recovery grant eligibility"
+          },
+          {
+            "text": "who is eligible for the recovery grant"
+          },
+          {
+            "text": "who can apply for small business recovery grant"
+          },
+          {
+            "text": "am i eligible for recovery grant"
+          },
+          {
+            "text": "eligibility for recovery grant"
+          },
+          {
+            "text": "criteria for small business recovery grant"
+          },
+          {
+            "text": "who does the recovery grant apply to"
+          }
+        ],
+        "description": "Small business recovery grant eligibility"
+      },
+      {
+        "intent": "record-keeping-restaurant",
+        "examples": [
+          {
+            "text": "record keeping for restaurants"
+          },
+          {
+            "text": "record keeping for cafe"
+          },
+          {
+            "text": "record keeping for food court"
+          },
+          {
+            "text": "recording customer information for restaurants"
+          }
+        ],
+        "description": "Record keeping guidelines for restaurants"
+      },
+      {
+        "intent": "jobkeeper-general",
+        "examples": [
+          {
+            "text": "How much is JobKeeper"
+          },
+          {
+            "text": "JobKeeper enrolment data"
+          },
+          {
+            "text": "When does JobKeeper end"
+          },
+          {
+            "text": "What is JobKeeper payment"
+          },
+          {
+            "text": "When does JobKeeper start"
+          },
+          {
+            "text": "When is JobKeeper available"
+          },
+          {
+            "text": "benefits of JobKeeper"
+          }
+        ],
+        "description": "General information on JobKeeper payments"
+      }
+    ],
+    "entities": [
+      {
+        "entity": "Sydney-location",
+        "values": [
+          {
+            "type": "synonyms",
+            "value": "Chippendale",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "online",
+            "synonyms": [
+              "e-commerce"
+            ]
+          },
+          {
+            "type": "synonyms",
+            "value": "Burwood",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "Marrickville",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "Strathfield",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "Darlinghurst",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "Hurlstone Park",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "Rozelle",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "Earlwood",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "Newtown",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "Lilyfield",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "Leichhardt",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "Pyrmont",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "The Rocks",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "Sydney CBD",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "Bronte",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "Balmain",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "Bellevue Hill",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "Point Piper",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "Ashfield",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "Dulwich Hill",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "Paddington",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "Surry Hills",
+            "synonyms": []
+          }
+        ],
+        "fuzzy_match": true
+      },
+      {
+        "entity": "boolean",
+        "values": [
+          {
+            "type": "synonyms",
+            "value": "no",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "yes",
+            "synonyms": []
+          }
+        ],
+        "fuzzy_match": true
+      },
+      {
+        "entity": "industries",
+        "values": [
+          {
+            "type": "synonyms",
+            "value": "hotels",
+            "synonyms": [
+              "accommodation",
+              "guesthouses",
+              "resorts",
+              "motels"
+            ]
+          },
+          {
+            "type": "synonyms",
+            "value": "worship",
+            "synonyms": [
+              "religious",
+              "church"
+            ]
+          },
+          {
+            "type": "synonyms",
+            "value": "pubs",
+            "synonyms": [
+              "clubs",
+              "casinos",
+              "bars",
+              "breweries",
+              "pub",
+              "taverns",
+              "nightclubs",
+              "bistros"
+            ]
+          },
+          {
+            "type": "synonyms",
+            "value": "retail",
+            "synonyms": [
+              "grocery"
+            ]
+          },
+          {
+            "type": "synonyms",
+            "value": "sex services",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "sports",
+            "synonyms": [
+              "gym",
+              "recreation"
+            ]
+          },
+          {
+            "type": "synonyms",
+            "value": "stadiums",
+            "synonyms": [
+              "recreation facilities",
+              "showgrounds",
+              "racecourses",
+              "arenas"
+            ]
+          },
+          {
+            "type": "synonyms",
+            "value": "transport",
+            "synonyms": [
+              "freight",
+              "logistics operations"
+            ]
+          },
+          {
+            "type": "synonyms",
+            "value": "zoos",
+            "synonyms": [
+              "reptile parks",
+              "aquariums"
+            ]
+          },
+          {
+            "type": "synonyms",
+            "value": "wedding",
+            "synonyms": [
+              "wedding ceremonies",
+              "wedding receptions"
+            ]
+          },
+          {
+            "type": "synonyms",
+            "value": "restaurants",
+            "synonyms": [
+              "cafe",
+              "hospitality"
+            ]
+          },
+          {
+            "type": "synonyms",
+            "value": "my industry",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "taxi",
+            "synonyms": [
+              "taxis",
+              "taxicab",
+              "cab"
+            ]
+          },
+          {
+            "type": "synonyms",
+            "value": "agriculture",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "auctions",
+            "synonyms": [
+              "open houses"
+            ]
+          },
+          {
+            "type": "synonyms",
+            "value": "betting agencies",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "beauty services",
+            "synonyms": [
+              "tattoo parlours",
+              "massage parlours"
+            ]
+          },
+          {
+            "type": "synonyms",
+            "value": "abattoirs",
+            "synonyms": [
+              "meat",
+              "meat processing",
+              "slaughterhouses",
+              "poultry",
+              "butchers"
+            ]
+          },
+          {
+            "type": "synonyms",
+            "value": "cinemas",
+            "synonyms": [
+              "concert",
+              "drive-in cinemas",
+              "theatre"
+            ]
+          },
+          {
+            "type": "synonyms",
+            "value": "caravan parks",
+            "synonyms": [
+              "camping grounds"
+            ]
+          },
+          {
+            "type": "synonyms",
+            "value": "conference",
+            "synonyms": [
+              "function"
+            ]
+          },
+          {
+            "type": "synonyms",
+            "value": "commercial vessels",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "community centres",
+            "synonyms": [
+              "halls",
+              "community halls",
+              "centres"
+            ]
+          },
+          {
+            "type": "synonyms",
+            "value": "construction",
+            "synonyms": [
+              "tradespeople",
+              "building",
+              "architectural"
+            ]
+          },
+          {
+            "type": "synonyms",
+            "value": "food processing",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "museums",
+            "synonyms": [
+              "galleries"
+            ]
+          },
+          {
+            "type": "synonyms",
+            "value": "funerals",
+            "synonyms": [
+              "wakes",
+              "cremations",
+              "memorials"
+            ]
+          },
+          {
+            "type": "synonyms",
+            "value": "libraries",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "manufacturing",
+            "synonyms": [
+              "warehousing"
+            ]
+          },
+          {
+            "type": "synonyms",
+            "value": "markets",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "office",
+            "synonyms": [
+              "call centres"
+            ]
+          }
+        ],
+        "fuzzy_match": true
+      },
+      {
+        "entity": "industry-guidelines",
+        "values": [
+          {
+            "type": "synonyms",
+            "value": "industry guidelines",
+            "synonyms": []
+          }
+        ],
+        "fuzzy_match": true
+      },
+      {
+        "entity": "business_issues",
+        "values": [
+          {
+            "type": "synonyms",
+            "value": "wage",
+            "synonyms": [
+              "wage assistance",
+              "cannot pay wage",
+              "salary",
+              "payroll",
+              "paycheck"
+            ]
+          },
+          {
+            "type": "synonyms",
+            "value": "other",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "re-opening",
+            "synonyms": [
+              "re-opening assistance",
+              "reopening",
+              "re-launch"
+            ]
+          },
+          {
+            "type": "synonyms",
+            "value": "loan",
+            "synonyms": [
+              "repay debt",
+              "need a loan",
+              "loans"
+            ]
+          }
+        ],
+        "fuzzy_match": true
+      },
+      {
+        "entity": "sys-number",
+        "values": [],
+        "fuzzy_match": true
+      },
+      {
+        "entity": "business_size",
+        "values": [
+          {
+            "type": "synonyms",
+            "value": "small business",
+            "synonyms": [
+              "SME"
+            ]
+          },
+          {
+            "type": "synonyms",
+            "value": "sole trader",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "medium business",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "large business",
+            "synonyms": []
+          }
+        ],
+        "fuzzy_match": true
+      },
+      {
+        "entity": "stop",
+        "values": [
+          {
+            "type": "synonyms",
+            "value": "stop",
+            "synonyms": []
+          }
+        ],
+        "fuzzy_match": true
+      }
+    ],
+    "metadata": {
+      "api_version": {
+        "major_version": "v2",
+        "minor_version": "2018-11-08"
+      },
+      "from-sample": true
+    },
+    "webhooks": [
+      {
+        "url": "",
+        "name": "main_webhook",
+        "headers": []
+      }
+    ],
+    "dialog_nodes": [
+      {
+        "type": "standard",
+        "title": "Doesn't match ",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "Sorry, I didn’t understand your answer, please try again"
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            },
+            {
+              "values": [
+                {
+                  "text": "If you are confused and would like to speak to a real person, please click on the link below:"
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            },
+            {
+              "values": [
+                {
+                  "text": "LINK: https://mybusiness.service.nsw.gov.au/concierge, Business Concierge"
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            }
+          ]
+        },
+        "parent": "node_4_1595405057951",
+        "next_step": {
+          "behavior": "jump_to",
+          "selector": "body",
+          "dialog_node": "node_4_1595405057951"
+        },
+        "conditions": "anything_else",
+        "dialog_node": "node_4_1595405245664",
+        "previous_sibling": "node_2_1595401754442"
+      },
+      {
+        "type": "standard",
+        "title": "stop",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "No worries"
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            }
+          ]
+        },
+        "parent": "node_4_1595405057951",
+        "next_step": {
+          "behavior": "jump_to",
+          "selector": "body",
+          "dialog_node": "node_9_1594822818704"
+        },
+        "conditions": "@stop",
+        "dialog_node": "node_2_1595401754442",
+        "previous_sibling": "node_4_1595405081719"
+      },
+      {
+        "type": "frame",
+        "title": "Store turnover",
+        "parent": "node_4_1595405057951",
+        "next_step": {
+          "behavior": "jump_to",
+          "selector": "body",
+          "dialog_node": "node_4_1595405288481"
+        },
+        "conditions": "@sys-number",
+        "dialog_node": "node_4_1595405081719"
+      },
+      {
+        "type": "frame",
+        "title": "Not first time",
+        "output": {
+          "generic": []
+        },
+        "parent": "node_5_1595296206262",
+        "conditions": "@boolean:no",
+        "dialog_node": "node_9_1595296222684",
+        "previous_sibling": "node_6_1595293672240"
+      },
+      {
+        "type": "event_handler",
+        "parent": "node_5_1595296206262",
+        "event_name": "focus",
+        "dialog_node": "handler_2_1595315144794",
+        "previous_sibling": "node_9_1595296222684"
+      },
+      {
+        "type": "frame",
+        "title": "First time",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "Hi! I’m your Business Buddy, a virtual assistant powered by IBM Watson Assistant Technology."
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            },
+            {
+              "values": [
+                {
+                  "text": "I provide updates on COVID-19 restrictions, policies and grants which are all tailored to your small business."
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            },
+            {
+              "values": [
+                {
+                  "text": "Before we get started, I need to learn a few things about your business. All data collected is securely stored within Australia."
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            },
+            {
+              "values": [
+                {
+                  "text": "Remember, if you ever make a mistake, check out “Settings” in the drop-down menu."
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            },
+            {
+              "values": [
+                {
+                  "text": "Let's begin!"
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            }
+          ]
+        },
+        "parent": "node_5_1595296206262",
+        "next_step": {
+          "behavior": "jump_to",
+          "selector": "body",
+          "dialog_node": "node_7_1595475086592"
+        },
+        "conditions": "@boolean:yes",
+        "dialog_node": "node_6_1595293672240"
+      },
+      {
+        "type": "slot",
+        "parent": "node_7_1595334691335",
+        "variable": "$industries",
+        "dialog_node": "slot_9_1595334753861",
+        "previous_sibling": "node_6_1595335248164"
+      },
+      {
+        "type": "frame",
+        "title": "retrieve name",
+        "parent": "node_7_1595334691335",
+        "metadata": {
+          "_customization": {
+            "mcr": true
+          }
+        },
+        "conditions": "!$business_name",
+        "dialog_node": "node_6_1595335248164"
+      },
+      {
+        "type": "event_handler",
+        "output": {
+          "text": {
+            "values": [
+              "How many full-time equivalent staff do you have?"
+            ],
+            "selection_policy": "sequential"
+          }
+        },
+        "parent": "slot_7_1595404839906",
+        "event_name": "focus",
+        "dialog_node": "handler_9_1595404839916",
+        "previous_sibling": "handler_10_1595404839916"
+      },
+      {
+        "type": "event_handler",
+        "output": {},
+        "parent": "slot_7_1595404839906",
+        "context": {
+          "num_FTE_staff": "@sys-number"
+        },
+        "conditions": "@sys-number",
+        "event_name": "input",
+        "dialog_node": "handler_10_1595404839916"
+      },
+      {
+        "type": "standard",
+        "title": "Doesn't match",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "Sorry, I didn’t understand your answer, please try again"
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            },
+            {
+              "values": [
+                {
+                  "text": "If you are confused and would like to speak to a real person, please click on the link below:"
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            },
+            {
+              "values": [
+                {
+                  "text": "LINK: https://mybusiness.service.nsw.gov.au/concierge, Business Concierge"
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            }
+          ]
+        },
+        "parent": "node_7_1595405768312",
+        "next_step": {
+          "behavior": "jump_to",
+          "selector": "body",
+          "dialog_node": "node_7_1595405768312"
+        },
+        "conditions": "anything_else",
+        "dialog_node": "node_10_1595405850372",
+        "previous_sibling": "node_9_1595405842022"
+      },
+      {
+        "type": "standard",
+        "title": "stop ",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "No worries"
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            }
+          ]
+        },
+        "parent": "node_7_1595405768312",
+        "next_step": {
+          "behavior": "jump_to",
+          "selector": "body",
+          "dialog_node": "node_9_1594822818704"
+        },
+        "conditions": "@stop",
+        "dialog_node": "node_9_1595405842022",
+        "previous_sibling": "node_10_1595405788390"
+      },
+      {
+        "type": "frame",
+        "title": "Store cost re-opening",
+        "parent": "node_7_1595405768312",
+        "next_step": {
+          "behavior": "jump_to",
+          "selector": "body",
+          "dialog_node": "node_1_1595378722418"
+        },
+        "conditions": "@boolean",
+        "dialog_node": "node_10_1595405788390"
+      },
+      {
+        "type": "slot",
+        "output": {},
+        "parent": "Welcome",
+        "variable": "$postcode",
+        "dialog_node": "slot_8_1595400738705",
+        "previous_sibling": "handler_1_1594858267267"
+      },
+      {
+        "type": "response_condition",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "Sorry I did not understand your answer, please try again."
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            }
+          ]
+        },
+        "parent": "Welcome",
+        "disabled": true,
+        "conditions": "!$postcode",
+        "dialog_node": "response_8_1595399328965",
+        "previous_sibling": "response_4_1595399312420"
+      },
+      {
+        "type": "event_handler",
+        "output": {
+          "generic": []
+        },
+        "parent": "Welcome",
+        "event_name": "focus",
+        "dialog_node": "handler_1_1594858267267",
+        "previous_sibling": "response_8_1595399328965"
+      },
+      {
+        "type": "response_condition",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "Thanks for that."
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            }
+          ]
+        },
+        "parent": "Welcome",
+        "disabled": true,
+        "next_step": {
+          "behavior": "jump_to",
+          "selector": "body",
+          "dialog_node": "node_7_1595388666728"
+        },
+        "conditions": "$postcode",
+        "dialog_node": "response_4_1595399312420"
+      },
+      {
+        "type": "standard",
+        "title": "Payment threshold",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "Is the total Australian wages below the NSW government 2019-20 payroll tax threshold of \\$900,000? (yes/no)"
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            }
+          ]
+        },
+        "parent": "node_6_1595383660895",
+        "dialog_node": "node_4_1595405288481",
+        "previous_sibling": "node_4_1595405057951"
+      },
+      {
+        "type": "standard",
+        "title": "Check recovery grant eligibility",
+        "parent": "node_6_1595383660895",
+        "metadata": {
+          "_customization": {
+            "mcr": true
+          }
+        },
+        "dialog_node": "node_1_1595378722418",
+        "previous_sibling": "node_7_1595405768312"
+      },
+      {
+        "type": "response_condition",
+        "output": {
+          "generic": []
+        },
+        "parent": "node_6_1595383660895",
+        "next_step": {
+          "behavior": "jump_to",
+          "selector": "body",
+          "dialog_node": "node_3_1595404356338"
+        },
+        "conditions": "@boolean:yes",
+        "dialog_node": "response_9_1595383679258",
+        "previous_sibling": "node_1_1595378722418"
+      },
+      {
+        "type": "standard",
+        "title": "Cost reopening",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "Do you have costs from 1st of July associated with safely reopening or scaling up your business (e.g. cleaning products, digital solutions)? (yes/no)"
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            }
+          ]
+        },
+        "parent": "node_6_1595383660895",
+        "dialog_node": "node_7_1595405768312",
+        "previous_sibling": "node_10_1595405463400"
+      },
+      {
+        "type": "standard",
+        "title": "Turnover fall",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "Please enter your fall in turnover between March to July 2020 compared to an equivalent period as a percentage. (e.g. 25)"
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            }
+          ]
+        },
+        "parent": "node_6_1595383660895",
+        "dialog_node": "node_4_1595405057951",
+        "previous_sibling": "node_3_1595404356338"
+      },
+      {
+        "type": "response_condition",
+        "output": {
+          "generic": []
+        },
+        "parent": "node_6_1595383660895",
+        "next_step": {
+          "behavior": "jump_to",
+          "selector": "body",
+          "dialog_node": "node_9_1594822818704"
+        },
+        "conditions": "@boolean:no",
+        "dialog_node": "response_3_1595383810494",
+        "previous_sibling": "response_9_1595383679258"
+      },
+      {
+        "type": "standard",
+        "title": "Turnover_75000",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "Do you have an annual turnover of more than \\$75,000? (yes/no)"
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            }
+          ]
+        },
+        "parent": "node_6_1595383660895",
+        "dialog_node": "node_10_1595405463400",
+        "previous_sibling": "node_4_1595405288481"
+      },
+      {
+        "type": "standard",
+        "title": "Number FTE staff",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "How many full-time equivalent staff do you have? (e.g. 25)"
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            }
+          ]
+        },
+        "parent": "node_6_1595383660895",
+        "dialog_node": "node_3_1595404356338"
+      },
+      {
+        "type": "standard",
+        "title": "Doesn't match",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "Sorry, I didn’t understand your answer, please try again"
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            },
+            {
+              "values": [
+                {
+                  "text": "If you are confused and would like to speak to a real person, please click on the link below:"
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            },
+            {
+              "values": [
+                {
+                  "text": "LINK: https://mybusiness.service.nsw.gov.au/concierge, Business Concierge"
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            }
+          ]
+        },
+        "parent": "node_4_1595475202783",
+        "next_step": {
+          "behavior": "jump_to",
+          "selector": "body",
+          "dialog_node": "node_4_1595475202783"
+        },
+        "conditions": "anything_else",
+        "dialog_node": "node_2_1595475235520",
+        "previous_sibling": "node_7_1595388666728"
+      },
+      {
+        "type": "frame",
+        "title": "Industries",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "Awesome."
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            }
+          ]
+        },
+        "parent": "node_4_1595475202783",
+        "next_step": {
+          "behavior": "jump_to",
+          "selector": "body",
+          "dialog_node": "node_1_1595294000835"
+        },
+        "conditions": "@industries",
+        "dialog_node": "node_7_1595388666728"
+      },
+      {
+        "type": "slot",
+        "parent": "node_6_1595293672240",
+        "variable": "$first_time",
+        "dialog_node": "slot_8_1595316377026"
+      },
+      {
+        "type": "slot",
+        "output": {},
+        "parent": "node_7_1595388666728",
+        "variable": "$industries",
+        "dialog_node": "slot_6_1595388687166"
+      },
+      {
+        "type": "standard",
+        "title": "Doesn't match",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "Sorry, I didn’t understand your answer, please try again"
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            },
+            {
+              "values": [
+                {
+                  "text": "If you are confused and would like to speak to a real person, please click on the link below:"
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            },
+            {
+              "values": [
+                {
+                  "text": "LINK: https://mybusiness.service.nsw.gov.au/concierge, Business Concierge"
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            }
+          ]
+        },
+        "parent": "node_4_1595475274865",
+        "next_step": {
+          "behavior": "jump_to",
+          "selector": "body",
+          "dialog_node": "node_4_1595475274865"
+        },
+        "conditions": "anything_else",
+        "dialog_node": "node_3_1595475487558",
+        "previous_sibling": "node_10_1595296763506"
+      },
+      {
+        "type": "frame",
+        "title": "Number of staff",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "Thanks for that."
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            }
+          ]
+        },
+        "parent": "node_4_1595475274865",
+        "next_step": {
+          "behavior": "jump_to",
+          "selector": "body",
+          "dialog_node": "node_2_1595223716571"
+        },
+        "conditions": "@sys-number",
+        "dialog_node": "node_10_1595296763506"
+      },
+      {
+        "type": "slot",
+        "output": {},
+        "parent": "node_10_1595296763506",
+        "variable": "$number_employees",
+        "dialog_node": "slot_2_1595296769054"
+      },
+      {
+        "type": "standard",
+        "title": "Yes/no redirect",
+        "parent": "node_9_1594822818704",
+        "metadata": {
+          "_customization": {
+            "mcr": true
+          }
+        },
+        "conditions": "@boolean",
+        "dialog_node": "node_7_1595381319862",
+        "previous_sibling": "response_7_1594864280526"
+      },
+      {
+        "type": "response_condition",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "Are you looking for information on the industry your business is in? or other industries (please specify by typing in the chat, e.g. retail, hospitality)?"
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            },
+            {
+              "title": "Industry guidelines for my industry",
+              "options": [],
+              "description": "industry guidelines for $industries",
+              "response_type": "option"
+            }
+          ]
+        },
+        "parent": "node_9_1594822818704",
+        "disabled": true,
+        "dialog_node": "response_7_1594864280526"
+      },
+      {
+        "type": "standard",
+        "title": "Yes/no redirect compliance measures",
+        "parent": "node_6_1595381525258",
+        "metadata": {
+          "_customization": {
+            "mcr": true
+          }
+        },
+        "conditions": "@boolean",
+        "dialog_node": "node_3_1595381821844"
+      },
+      {
+        "type": "event_handler",
+        "output": {
+          "text": {
+            "values": [
+              "number of notification"
+            ],
+            "selection_policy": "sequential"
+          }
+        },
+        "parent": "slot_3_1595336491313",
+        "event_name": "focus",
+        "dialog_node": "handler_2_1595336491317",
+        "previous_sibling": "handler_10_1595336491317"
+      },
+      {
+        "type": "event_handler",
+        "output": {},
+        "parent": "slot_3_1595336491313",
+        "context": {
+          "num_notification": "<?entities['sys-number'].value ?>"
+        },
+        "conditions": "entities['sys-number']",
+        "event_name": "input",
+        "dialog_node": "handler_10_1595336491317"
+      },
+      {
+        "type": "slot",
+        "parent": "node_3_1595158458414",
+        "variable": "$number_2",
+        "dialog_node": "slot_8_1595330409775",
+        "previous_sibling": "handler_3_1595330452071"
+      },
+      {
+        "type": "event_handler",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "enter two numbers"
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            }
+          ]
+        },
+        "parent": "node_3_1595158458414",
+        "event_name": "focus",
+        "dialog_node": "handler_3_1595330452071"
+      },
+      {
+        "type": "slot",
+        "parent": "node_1_1595405544179",
+        "variable": "$turnover_75000",
+        "dialog_node": "slot_8_1595405552404"
+      },
+      {
+        "type": "response_condition",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "Sorry you are unlikely to be eligible for Small Business Recovery Grant."
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            }
+          ]
+        },
+        "parent": "node_1_1595378722418",
+        "next_step": {
+          "behavior": "jump_to",
+          "selector": "body",
+          "dialog_node": "node_9_1594822818704"
+        },
+        "conditions": "true",
+        "dialog_node": "response_7_1595379279481",
+        "previous_sibling": "response_8_1595378960427"
+      },
+      {
+        "type": "response_condition",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "Good news, you are likely to be eligible for the Small Business Recovery Grant. Click on the link below to find out more."
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            },
+            {
+              "values": [
+                {
+                  "text": "LINK: https://www.service.nsw.gov.au/transaction/apply-small-business-covid-19-recovery-grant, Small Business Recovery Grant"
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            },
+            {
+              "values": [
+                {
+                  "text": "Would you like to add Small Business Recovery Grant to My Services? (yes/no)"
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            }
+          ]
+        },
+        "parent": "node_1_1595378722418",
+        "conditions": "$num_FTE_staff>20 && $payroll_threshold:yes && $turnover_75000:yes && $check_cost_reopening:yes && $turnover_fall >= 30",
+        "dialog_node": "response_8_1595378960427",
+        "previous_sibling": "node_9_1595380526406"
+      },
+      {
+        "type": "standard",
+        "title": "Redirect to ask industry guidelines",
+        "output": {
+          "generic": []
+        },
+        "parent": "node_1_1595378722418",
+        "metadata": {
+          "_customization": {
+            "mcr": false
+          }
+        },
+        "next_step": {
+          "behavior": "jump_to",
+          "selector": "body",
+          "dialog_node": "node_9_1594822818704"
+        },
+        "conditions": "@boolean",
+        "dialog_node": "node_9_1595380526406"
+      },
+      {
+        "type": "response_condition",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "Below is the link to the NSW Compliance Measures"
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            },
+            {
+              "values": [
+                {
+                  "text": "LINK: https://www.nsw.gov.au/covid-19/what-you-can-and-cant-do-under-rules#pubs--compliance-and-restrictions, NSW Compliance Measures"
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            },
+            {
+              "values": [
+                {
+                  "text": "Would you like to add NSW Compliance Measures to My Services? (yes/no)"
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            }
+          ]
+        },
+        "parent": "node_3_1595381821844",
+        "conditions": "@boolean:yes",
+        "dialog_node": "response_3_1595382615525",
+        "previous_sibling": "node_3_1595386088307"
+      },
+      {
+        "type": "response_condition",
+        "output": {
+          "generic": []
+        },
+        "parent": "node_3_1595381821844",
+        "next_step": {
+          "behavior": "jump_to",
+          "selector": "body",
+          "dialog_node": "node_4_1595386056145"
+        },
+        "conditions": "@boolean:no",
+        "dialog_node": "response_3_1595383000548",
+        "previous_sibling": "response_3_1595382615525"
+      },
+      {
+        "type": "standard",
+        "title": "yes/no adding to my service",
+        "output": {
+          "generic": []
+        },
+        "parent": "node_3_1595381821844",
+        "next_step": {
+          "behavior": "jump_to",
+          "selector": "body",
+          "dialog_node": "node_4_1595386056145"
+        },
+        "conditions": "@boolean",
+        "dialog_node": "node_3_1595386088307"
+      },
+      {
+        "type": "standard",
+        "title": "yes/no redirect",
+        "output": {
+          "generic": []
+        },
+        "parent": "node_10_1594862886068",
+        "next_step": {
+          "behavior": "jump_to",
+          "selector": "body",
+          "dialog_node": "node_6_1595381525258"
+        },
+        "conditions": "@boolean",
+        "dialog_node": "node_7_1595390699926"
+      },
+      {
+        "type": "event_handler",
+        "output": {
+          "text": {
+            "values": [
+              "Do you have costs from 1st of July associated with safely reopening or scaling up your business (e.g. cleaning products, digital solutions)? (yes/no)"
+            ],
+            "selection_policy": "sequential"
+          }
+        },
+        "parent": "slot_10_1595405793459",
+        "event_name": "focus",
+        "dialog_node": "handler_5_1595405793469",
+        "previous_sibling": "handler_3_1595405793469"
+      },
+      {
+        "type": "event_handler",
+        "output": {},
+        "parent": "slot_10_1595405793459",
+        "context": {
+          "check_cost_reopening": "@boolean"
+        },
+        "conditions": "@boolean",
+        "event_name": "input",
+        "dialog_node": "handler_3_1595405793469"
+      },
+      {
+        "type": "response_condition",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "Retrieving the industry guidelines for $industries...."
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            }
+          ]
+        },
+        "parent": "node_7_1595381319862",
+        "next_step": {
+          "behavior": "jump_to",
+          "selector": "body",
+          "dialog_node": "node_6_1595381525258"
+        },
+        "conditions": "@boolean:yes",
+        "dialog_node": "response_2_1595381408724",
+        "previous_sibling": "response_6_1595381374582"
+      },
+      {
+        "type": "response_condition",
+        "output": {
+          "generic": []
+        },
+        "parent": "node_7_1595381319862",
+        "next_step": {
+          "behavior": "jump_to",
+          "selector": "body",
+          "dialog_node": "node_6_1595381525258"
+        },
+        "conditions": "@boolean:no",
+        "dialog_node": "response_10_1595381463457",
+        "previous_sibling": "response_2_1595381408724"
+      },
+      {
+        "type": "response_condition",
+        "output": {
+          "generic": []
+        },
+        "parent": "node_7_1595381319862",
+        "next_step": {
+          "behavior": "jump_to",
+          "selector": "body",
+          "dialog_node": "node_10_1594862886068"
+        },
+        "conditions": "@boolean:yes && $industries:restaurants",
+        "dialog_node": "response_6_1595381374582"
+      },
+      {
+        "type": "standard",
+        "title": "stop ",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "No worries"
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            }
+          ]
+        },
+        "parent": "node_10_1595405463400",
+        "next_step": {
+          "behavior": "jump_to",
+          "selector": "body",
+          "dialog_node": "node_9_1594822818704"
+        },
+        "conditions": "@stop",
+        "dialog_node": "node_7_1595405732142",
+        "previous_sibling": "node_1_1595405544179"
+      },
+      {
+        "type": "standard",
+        "title": "Doesn't match",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "Sorry, I didn’t understand your answer, please try again"
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            },
+            {
+              "values": [
+                {
+                  "text": "If you are confused and would like to speak to a real person, please click on the link below:"
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            },
+            {
+              "values": [
+                {
+                  "text": "LINK: https://mybusiness.service.nsw.gov.au/concierge, Business Concierge"
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            }
+          ]
+        },
+        "parent": "node_10_1595405463400",
+        "next_step": {
+          "behavior": "jump_to",
+          "selector": "body",
+          "dialog_node": "node_10_1595405463400"
+        },
+        "conditions": "anything_else",
+        "dialog_node": "node_8_1595405745451",
+        "previous_sibling": "node_7_1595405732142"
+      },
+      {
+        "type": "frame",
+        "title": "Store turnover",
+        "parent": "node_10_1595405463400",
+        "next_step": {
+          "behavior": "jump_to",
+          "selector": "body",
+          "dialog_node": "node_7_1595405768312"
+        },
+        "conditions": "@boolean",
+        "dialog_node": "node_1_1595405544179"
+      },
+      {
+        "type": "slot",
+        "output": {},
+        "parent": "node_10_1595294844753",
+        "variable": "$business_name",
+        "dialog_node": "slot_9_1595295687314"
+      },
+      {
+        "type": "event_handler",
+        "output": {
+          "text": {
+            "values": [
+              "Is the total Australian wages below the NSW government 2019-20 payroll tax threshold of \\$900,000? (yes/no)"
+            ],
+            "selection_policy": "sequential"
+          }
+        },
+        "parent": "slot_3_1595405321381",
+        "event_name": "focus",
+        "dialog_node": "handler_10_1595405321390",
+        "previous_sibling": "handler_4_1595405321390"
+      },
+      {
+        "type": "event_handler",
+        "output": {},
+        "parent": "slot_3_1595405321381",
+        "context": {
+          "payroll_threshold": "@boolean"
+        },
+        "conditions": "@boolean",
+        "event_name": "input",
+        "dialog_node": "handler_4_1595405321390"
+      },
+      {
+        "type": "event_handler",
+        "output": {
+          "text": {
+            "values": [
+              "What is the name of your business?"
+            ],
+            "selection_policy": "sequential"
+          }
+        },
+        "parent": "slot_10_1595294012608",
+        "event_name": "focus",
+        "dialog_node": "handler_5_1595294012618",
+        "previous_sibling": "handler_3_1595294012618"
+      },
+      {
+        "type": "event_handler",
+        "output": {},
+        "parent": "slot_10_1595294012608",
+        "context": {
+          "business_name": "input.text"
+        },
+        "conditions": "input.text",
+        "event_name": "input",
+        "dialog_node": "handler_3_1595294012618"
+      },
+      {
+        "type": "event_handler",
+        "output": {
+          "text": {
+            "values": [
+              "postcode"
+            ],
+            "selection_policy": "sequential"
+          }
+        },
+        "parent": "slot_10_1595331470421",
+        "event_name": "focus",
+        "dialog_node": "handler_5_1595331470425",
+        "previous_sibling": "handler_3_1595331470425"
+      },
+      {
+        "type": "event_handler",
+        "output": {},
+        "parent": "slot_10_1595331470421",
+        "context": {
+          "postcode": "@sys-number"
+        },
+        "conditions": "@sys-number",
+        "event_name": "input",
+        "dialog_node": "handler_3_1595331470425"
+      },
+      {
+        "type": "event_handler",
+        "output": {
+          "text": {
+            "values": [
+              "name"
+            ],
+            "selection_policy": "sequential"
+          }
+        },
+        "parent": "slot_9_1595335261531",
+        "event_name": "focus",
+        "dialog_node": "handler_1_1595335261543",
+        "previous_sibling": "handler_3_1595335261543"
+      },
+      {
+        "type": "event_handler",
+        "output": {},
+        "parent": "slot_9_1595335261531",
+        "context": {
+          "business_name": "<?input.text?>"
+        },
+        "conditions": "true",
+        "event_name": "input",
+        "dialog_node": "handler_3_1595335261543"
+      },
+      {
+        "type": "response_condition",
+        "output": {
+          "generic": []
+        },
+        "parent": "node_6_1595335248164",
+        "next_step": {
+          "behavior": "jump_to",
+          "selector": "body",
+          "dialog_node": "node_2_1595223716571"
+        },
+        "conditions": "$num_notification:0",
+        "dialog_node": "response_6_1595336717653",
+        "previous_sibling": "response_6_1595336552493"
+      },
+      {
+        "type": "slot",
+        "output": {},
+        "parent": "node_6_1595335248164",
+        "variable": "$business_name",
+        "dialog_node": "slot_9_1595335261531",
+        "previous_sibling": "response_6_1595336717653"
+      },
+      {
+        "type": "response_condition",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "There have been $num_notification alerts from NSW Health today"
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            }
+          ]
+        },
+        "parent": "node_6_1595335248164",
+        "next_step": {
+          "behavior": "jump_to",
+          "selector": "body",
+          "dialog_node": "node_2_1595223716571"
+        },
+        "conditions": "$num_notification>0",
+        "dialog_node": "response_6_1595336552493"
+      },
+      {
+        "type": "standard",
+        "title": "Name of business",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "What is the name of your business?"
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            }
+          ]
+        },
+        "parent": "node_1_1595213253522",
+        "conditions": "",
+        "dialog_node": "node_1_1595294000835",
+        "previous_sibling": "node_4_1595475202783"
+      },
+      {
+        "type": "standard",
+        "title": "Number of staff",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "Please enter the number of employees your business has. (e.g. 20)"
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            }
+          ]
+        },
+        "parent": "node_1_1595213253522",
+        "dialog_node": "node_4_1595475274865",
+        "previous_sibling": "node_1_1595294000835"
+      },
+      {
+        "type": "standard",
+        "title": "Industries",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "Please enter the industry your business is in. (e.g. taxi, retail, restaurant)"
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            }
+          ]
+        },
+        "parent": "node_1_1595213253522",
+        "dialog_node": "node_4_1595475202783",
+        "previous_sibling": "node_7_1595475086592"
+      },
+      {
+        "type": "standard",
+        "title": "Postcode",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "Please enter the postcode your business is based in. (e.g. 2000)"
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            }
+          ]
+        },
+        "parent": "node_1_1595213253522",
+        "dialog_node": "node_7_1595475086592"
+      },
+      {
+        "type": "response_condition",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "Based on the information that you have provided, you may be eligible for the Small Business Recovery Grant."
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            },
+            {
+              "values": [
+                {
+                  "text": "If you ever wish to not continue, please type \"stop\"."
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            },
+            {
+              "values": [
+                {
+                  "text": "Would you like me to further check your eligibility? (yes/no). This may require additional information about your business."
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            }
+          ]
+        },
+        "parent": "node_2_1595223716571",
+        "conditions": "                   $industries != \"abattoirs\" &&                  $industries!= \"agriculture\" &&            $industries != \"caravan parks\" &&             $industries!= \"commercial vessels\" &&          $industries != \"conference\" &&           $industries != \"construction\" &&           $industries != \"food processing\" &&           $industries != \"funerals\" &&        $industries != \"sex services\" &&       $industries != \"wedding\" &&       $industries != \"worship\" && $postcode>=2000 && $postcode<3000",
+        "dialog_node": "response_2_1595223734747",
+        "previous_sibling": "node_6_1595383660895"
+      },
+      {
+        "type": "response_condition",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "Sorry you are unlikely to be eligible for Small Business Recovery Grant."
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            }
+          ]
+        },
+        "parent": "node_2_1595223716571",
+        "next_step": {
+          "behavior": "jump_to",
+          "selector": "body",
+          "dialog_node": "node_9_1594822818704"
+        },
+        "conditions": "true",
+        "dialog_node": "response_8_1595383437810",
+        "previous_sibling": "response_2_1595223734747"
+      },
+      {
+        "type": "standard",
+        "title": "Check whether ask follow up questions",
+        "parent": "node_2_1595223716571",
+        "metadata": {
+          "_customization": {
+            "mcr": true
+          }
+        },
+        "conditions": "@boolean",
+        "dialog_node": "node_6_1595383660895"
+      },
+      {
+        "type": "event_handler",
+        "output": {
+          "text": {
+            "values": [
+              "Please enter your fall in turnover between March to July 2020 compared to an equivalent period as a percentage (e.g. 25)"
+            ],
+            "selection_policy": "sequential"
+          }
+        },
+        "parent": "slot_9_1595405095685",
+        "event_name": "focus",
+        "dialog_node": "handler_8_1595405095695",
+        "previous_sibling": "handler_7_1595405095695"
+      },
+      {
+        "type": "event_handler",
+        "output": {},
+        "parent": "slot_9_1595405095685",
+        "context": {
+          "turnover_fall": "@sys-number"
+        },
+        "conditions": "@sys-number",
+        "event_name": "input",
+        "dialog_node": "handler_7_1595405095695"
+      },
+      {
+        "type": "slot",
+        "parent": "node_10_1595405303516",
+        "variable": "$payroll_threshold",
+        "dialog_node": "slot_3_1595405321381"
+      },
+      {
+        "type": "event_handler",
+        "output": {
+          "text": {
+            "values": [
+              "Do you have an annual turnover of more than \\$75,000? (yes/no)"
+            ],
+            "selection_policy": "sequential"
+          }
+        },
+        "parent": "slot_8_1595405552404",
+        "event_name": "focus",
+        "dialog_node": "handler_6_1595405552414",
+        "previous_sibling": "handler_3_1595405552414"
+      },
+      {
+        "type": "event_handler",
+        "output": {},
+        "parent": "slot_8_1595405552404",
+        "context": {
+          "turnover_75000": "@boolean"
+        },
+        "conditions": "@boolean",
+        "event_name": "input",
+        "dialog_node": "handler_3_1595405552414"
+      },
+      {
+        "type": "standard",
+        "title": "Doesn't match",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "Sorry, I didn’t understand your answer, please try again"
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            },
+            {
+              "values": [
+                {
+                  "text": "If you are confused and would like to speak to a real person, please click on the link below:"
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            },
+            {
+              "values": [
+                {
+                  "text": "LINK: https://mybusiness.service.nsw.gov.au/concierge, Business Concierge"
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            }
+          ]
+        },
+        "parent": "node_3_1595404356338",
+        "next_step": {
+          "behavior": "jump_to",
+          "selector": "body",
+          "dialog_node": "node_3_1595404356338"
+        },
+        "conditions": "anything_else",
+        "dialog_node": "node_1_1595401714818",
+        "previous_sibling": "node_3_1595401787754"
+      },
+      {
+        "type": "standard",
+        "title": "stop",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "No worries"
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            }
+          ]
+        },
+        "parent": "node_3_1595404356338",
+        "next_step": {
+          "behavior": "jump_to",
+          "selector": "body",
+          "dialog_node": "node_9_1594822818704"
+        },
+        "conditions": "@stop",
+        "dialog_node": "node_3_1595401787754",
+        "previous_sibling": "node_7_1595404832113"
+      },
+      {
+        "type": "frame",
+        "title": "num_FTE_staff",
+        "parent": "node_3_1595404356338",
+        "next_step": {
+          "behavior": "jump_to",
+          "selector": "body",
+          "dialog_node": "node_4_1595405057951"
+        },
+        "conditions": "@sys-number",
+        "dialog_node": "node_7_1595404832113"
+      },
+      {
+        "type": "event_handler",
+        "output": {
+          "text": {
+            "values": [
+              "enter number 2"
+            ],
+            "selection_policy": "sequential"
+          }
+        },
+        "parent": "slot_8_1595330409775",
+        "event_name": "focus",
+        "dialog_node": "handler_8_1595330409778",
+        "previous_sibling": "handler_1_1595330409778"
+      },
+      {
+        "type": "event_handler",
+        "output": {},
+        "parent": "slot_8_1595330409775",
+        "context": {
+          "number_2": "@sys-number"
+        },
+        "conditions": "@sys-number",
+        "event_name": "input",
+        "dialog_node": "handler_1_1595330409778"
+      },
+      {
+        "type": "standard",
+        "title": "stop",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "No worries"
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            }
+          ]
+        },
+        "parent": "node_4_1595405288481",
+        "next_step": {
+          "behavior": "jump_to",
+          "selector": "body",
+          "dialog_node": "node_9_1594822818704"
+        },
+        "conditions": "@stop",
+        "dialog_node": "node_5_1595405427527",
+        "previous_sibling": "node_10_1595405303516"
+      },
+      {
+        "type": "standard",
+        "title": "Doesn't match  ",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "Sorry, I didn’t understand your answer, please try again"
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            },
+            {
+              "values": [
+                {
+                  "text": "If you are confused and would like to speak to a real person, please click on the link below:"
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            },
+            {
+              "values": [
+                {
+                  "text": "LINK: https://mybusiness.service.nsw.gov.au/concierge, Business Concierge"
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            }
+          ]
+        },
+        "parent": "node_4_1595405288481",
+        "next_step": {
+          "behavior": "jump_to",
+          "selector": "body",
+          "dialog_node": "node_4_1595405288481"
+        },
+        "conditions": "anything_else",
+        "dialog_node": "node_6_1595405440853",
+        "previous_sibling": "node_5_1595405427527"
+      },
+      {
+        "type": "frame",
+        "title": "store payment threshold",
+        "parent": "node_4_1595405288481",
+        "next_step": {
+          "behavior": "jump_to",
+          "selector": "body",
+          "dialog_node": "node_10_1595405463400"
+        },
+        "conditions": "@boolean",
+        "dialog_node": "node_10_1595405303516"
+      },
+      {
+        "type": "slot",
+        "parent": "node_7_1595404832113",
+        "variable": "$num_FTE_staff",
+        "dialog_node": "slot_7_1595404839906"
+      },
+      {
+        "type": "slot",
+        "parent": "node_10_1595405788390",
+        "variable": "$check_cost_reopening",
+        "dialog_node": "slot_10_1595405793459"
+      },
+      {
+        "type": "event_handler",
+        "output": {
+          "text": {
+            "values": [
+              "Please enter the number of employees your business has. (e.g. 20)"
+            ],
+            "selection_policy": "sequential"
+          }
+        },
+        "parent": "slot_2_1595296769054",
+        "event_name": "focus",
+        "dialog_node": "handler_1_1595296769064",
+        "previous_sibling": "handler_10_1595296769064"
+      },
+      {
+        "type": "event_handler",
+        "output": {},
+        "parent": "slot_2_1595296769054",
+        "context": {
+          "number_employees": "@sys-number"
+        },
+        "conditions": "@sys-number",
+        "event_name": "input",
+        "dialog_node": "handler_10_1595296769064"
+      },
+      {
+        "type": "event_handler",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "What is the name of your business?"
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            }
+          ]
+        },
+        "parent": "node_1_1595294000835",
+        "event_name": "focus",
+        "dialog_node": "handler_1_1595294766489",
+        "previous_sibling": "node_10_1595294844753"
+      },
+      {
+        "type": "slot",
+        "parent": "node_1_1595294000835",
+        "variable": "$business_name",
+        "dialog_node": "slot_10_1595294012608",
+        "previous_sibling": "handler_1_1595294766489"
+      },
+      {
+        "type": "frame",
+        "title": "Store name",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "Great."
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            }
+          ]
+        },
+        "parent": "node_1_1595294000835",
+        "next_step": {
+          "behavior": "jump_to",
+          "selector": "body",
+          "dialog_node": "node_4_1595475274865"
+        },
+        "conditions": "!$business_name",
+        "dialog_node": "node_10_1595294844753"
+      },
+      {
+        "type": "response_condition",
+        "output": {
+          "generic": [
+            {
+              "values": [],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            }
+          ]
+        },
+        "parent": "node_9_1595380526406",
+        "disabled": true,
+        "dialog_node": "response_4_1595380566334"
+      },
+      {
+        "type": "event_handler",
+        "output": {
+          "text": {
+            "values": [
+              "employees number"
+            ],
+            "selection_policy": "sequential"
+          }
+        },
+        "parent": "slot_9_1595331541540",
+        "event_name": "focus",
+        "dialog_node": "handler_8_1595331541545",
+        "previous_sibling": "handler_4_1595331541545"
+      },
+      {
+        "type": "event_handler",
+        "output": {},
+        "parent": "slot_9_1595331541540",
+        "context": {
+          "number_employees": "@sys-number"
+        },
+        "conditions": "@sys-number",
+        "event_name": "input",
+        "dialog_node": "handler_4_1595331541545"
+      },
+      {
+        "type": "slot",
+        "parent": "node_9_1595296222684",
+        "variable": "$first_time",
+        "dialog_node": "slot_4_1595316420523",
+        "previous_sibling": "node_3_1595322830259"
+      },
+      {
+        "type": "frame",
+        "title": "Retrieving postcode, num_employee,  num_notification",
+        "parent": "node_9_1595296222684",
+        "metadata": {
+          "_customization": {
+            "mcr": false
+          }
+        },
+        "conditions": "!$postcode",
+        "dialog_node": "node_3_1595322830259"
+      },
+      {
+        "type": "event_handler",
+        "output": {
+          "text": {
+            "values": [
+              "Is this your first time using Business Buddies?"
+            ],
+            "selection_policy": "sequential"
+          }
+        },
+        "parent": "slot_4_1595316420523",
+        "event_name": "focus",
+        "dialog_node": "handler_8_1595316420533",
+        "previous_sibling": "handler_1_1595316420533"
+      },
+      {
+        "type": "event_handler",
+        "output": {},
+        "parent": "slot_4_1595316420523",
+        "context": {
+          "first_time": "@boolean"
+        },
+        "conditions": "@boolean",
+        "event_name": "input",
+        "dialog_node": "handler_1_1595316420533"
+      },
+      {
+        "type": "event_handler",
+        "output": {
+          "text": {
+            "values": [
+              "Please enter the postcode your business is based in. (e.g. 2000)"
+            ],
+            "selection_policy": "sequential"
+          }
+        },
+        "parent": "slot_8_1595400738705",
+        "event_name": "focus",
+        "dialog_node": "handler_2_1595400738707",
+        "previous_sibling": "handler_3_1595400738707"
+      },
+      {
+        "type": "event_handler",
+        "output": {},
+        "parent": "slot_8_1595400738705",
+        "context": {
+          "postcode": "@sys-number"
+        },
+        "conditions": "@sys-number",
+        "event_name": "input",
+        "dialog_node": "handler_3_1595400738707"
+      },
+      {
+        "type": "event_handler",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "name, postcode, industries, number employee, other financial support, turnover"
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            }
+          ]
+        },
+        "parent": "node_3_1595322830259",
+        "event_name": "focus",
+        "dialog_node": "handler_4_1595331652677",
+        "previous_sibling": "node_7_1595334691335"
+      },
+      {
+        "type": "slot",
+        "parent": "node_3_1595322830259",
+        "variable": "$number_employees",
+        "dialog_node": "slot_9_1595331541540",
+        "previous_sibling": "slot_10_1595331470421"
+      },
+      {
+        "type": "slot",
+        "parent": "node_3_1595322830259",
+        "variable": "$postcode",
+        "dialog_node": "slot_10_1595331470421",
+        "previous_sibling": "handler_4_1595331652677"
+      },
+      {
+        "type": "slot",
+        "output": {},
+        "parent": "node_3_1595322830259",
+        "variable": "$num_notification",
+        "dialog_node": "slot_3_1595336491313",
+        "previous_sibling": "slot_9_1595331541540"
+      },
+      {
+        "type": "frame",
+        "title": "retrieve industry",
+        "parent": "node_3_1595322830259",
+        "conditions": "!$industries",
+        "dialog_node": "node_7_1595334691335"
+      },
+      {
+        "type": "standard",
+        "title": "Doesn't match",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "Sorry, I didn’t understand your answer, please try again"
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            },
+            {
+              "values": [
+                {
+                  "text": "If you are confused and would like to speak to a real person, please click on the link below:"
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            },
+            {
+              "values": [
+                {
+                  "text": "LINK: https://mybusiness.service.nsw.gov.au/concierge, Business Concierge"
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            }
+          ]
+        },
+        "parent": "node_7_1595475086592",
+        "next_step": {
+          "behavior": "jump_to",
+          "selector": "body",
+          "dialog_node": "node_7_1595475086592"
+        },
+        "conditions": "anything_else",
+        "dialog_node": "node_1_1595475136586",
+        "previous_sibling": "Welcome"
+      },
+      {
+        "type": "frame",
+        "title": "Postcode",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "Thanks for that."
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            }
+          ]
+        },
+        "parent": "node_7_1595475086592",
+        "metadata": {
+          "_customization": {
+            "mcr": false
+          }
+        },
+        "next_step": {
+          "behavior": "jump_to",
+          "selector": "body",
+          "dialog_node": "node_4_1595475202783"
+        },
+        "conditions": "@sys-number",
+        "dialog_node": "Welcome"
+      },
+      {
+        "type": "event_handler",
+        "output": {
+          "text": {
+            "values": [
+              "What is the name of your business?"
+            ],
+            "selection_policy": "sequential"
+          }
+        },
+        "parent": "slot_9_1595295687314",
+        "event_name": "focus",
+        "dialog_node": "handler_6_1595295687325",
+        "previous_sibling": "handler_1_1595295687325"
+      },
+      {
+        "type": "event_handler",
+        "output": {},
+        "parent": "slot_9_1595295687314",
+        "context": {
+          "business_name": "<?input.text?>"
+        },
+        "conditions": "true",
+        "event_name": "input",
+        "dialog_node": "handler_1_1595295687325"
+      },
+      {
+        "type": "event_handler",
+        "output": {
+          "text": {
+            "values": [
+              "Please enter the industry your business is in. (e.g. taxi, retail, restaurant)"
+            ],
+            "selection_policy": "sequential"
+          }
+        },
+        "parent": "slot_6_1595388687166",
+        "event_name": "focus",
+        "dialog_node": "handler_1_1595388687177",
+        "previous_sibling": "handler_7_1595388687177"
+      },
+      {
+        "type": "event_handler",
+        "output": {},
+        "parent": "slot_6_1595388687166",
+        "context": {
+          "industries": "@industries"
+        },
+        "conditions": "@industries",
+        "event_name": "input",
+        "dialog_node": "handler_7_1595388687177"
+      },
+      {
+        "type": "slot",
+        "parent": "node_4_1595405081719",
+        "variable": "$turnover_fall",
+        "dialog_node": "slot_9_1595405095685"
+      },
+      {
+        "type": "event_handler",
+        "output": {
+          "text": {
+            "values": [
+              "Is this your first time using Business Buddies?"
+            ],
+            "selection_policy": "sequential"
+          }
+        },
+        "parent": "slot_8_1595316377026",
+        "event_name": "focus",
+        "dialog_node": "handler_9_1595316377036",
+        "previous_sibling": "handler_6_1595316377036"
+      },
+      {
+        "type": "event_handler",
+        "output": {},
+        "parent": "slot_8_1595316377026",
+        "context": {
+          "first_time": "@boolean"
+        },
+        "conditions": "@boolean",
+        "event_name": "input",
+        "dialog_node": "handler_6_1595316377036"
+      },
+      {
+        "type": "event_handler",
+        "output": {
+          "text": {
+            "values": [
+              "industry"
+            ],
+            "selection_policy": "sequential"
+          }
+        },
+        "parent": "slot_9_1595334753861",
+        "event_name": "focus",
+        "dialog_node": "handler_6_1595334753874",
+        "previous_sibling": "handler_10_1595334753873"
+      },
+      {
+        "type": "event_handler",
+        "output": {},
+        "parent": "slot_9_1595334753861",
+        "context": {
+          "industries": "@industries"
+        },
+        "conditions": "@industries",
+        "event_name": "input",
+        "dialog_node": "handler_10_1595334753873"
+      },
+      {
+        "type": "folder",
+        "title": "Gather user info",
+        "digress_in": "returns",
+        "dialog_node": "node_1_1595213253522",
+        "previous_sibling": "node_5_1595296206262"
+      },
+      {
+        "type": "standard",
+        "title": "Help me ",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "You can type into the chat to ask questions."
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            }
+          ]
+        },
+        "conditions": "#help",
+        "dialog_node": "node_5_1595376708203",
+        "previous_sibling": "node_4_1595386056145"
+      },
+      {
+        "type": "standard",
+        "title": "Restaurant guidelines",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "Under Public Health Orders, small businesses operating in NSW must have a COVID-19 Safety Plan outlining how your business will keep your customers and workers safe."
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            },
+            {
+              "values": [
+                {
+                  "text": "Click on the link below to find out more on industry guidelines for restaurants, cafes and food courts:"
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            },
+            {
+              "values": [
+                {
+                  "text": "LINK: https://www.nsw.gov.au/covid-19/industry-guidelines/restaurants-cafes-food-courts, Industry guidelines for restaurants, cafes, food courts"
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            },
+            {
+              "values": [
+                {
+                  "text": "Would you like to add industry guidelines to My Services? (yes/no)"
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            }
+          ]
+        },
+        "conditions": "#restaurants-industry-guidelines",
+        "digress_in": "does_not_return",
+        "dialog_node": "node_10_1594862886068",
+        "previous_sibling": "node_9_1594822818704"
+      },
+      {
+        "type": "standard",
+        "title": "Ending",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "Great work! Based on the information provided, you have been provided with the latest COVID-19 updates for your small business."
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            },
+            {
+              "values": [
+                {
+                  "text": "Please check your Business Buddy and your account email for any further updates."
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            },
+            {
+              "values": [
+                {
+                  "text": "Is there anything else I can help you with today?"
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            }
+          ]
+        },
+        "dialog_node": "node_4_1595386056145",
+        "previous_sibling": "node_6_1595381525258"
+      },
+      {
+        "type": "standard",
+        "title": "check first time",
+        "output": {
+          "generic": []
+        },
+        "next_step": {
+          "behavior": "skip_user_input"
+        },
+        "conditions": "!$first_time",
+        "dialog_node": "node_5_1595296206262",
+        "previous_sibling": "node_3_1595158458414"
+      },
+      {
+        "type": "standard",
+        "title": "Check whether to view NSW Compliance measures",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "Additionally, based on the information provided, I can show you the latest NSW Health Compliance Measures."
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            },
+            {
+              "values": [
+                {
+                  "text": "Would you like to view these restrictions? (yes/no)"
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            }
+          ]
+        },
+        "digress_in": "not_available",
+        "dialog_node": "node_6_1595381525258",
+        "digress_out": "allow_all",
+        "previous_sibling": "node_10_1594862886068"
+      },
+      {
+        "type": "standard",
+        "title": "Anything else",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "Sorry, I didn’t understand your answer, please try again"
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            },
+            {
+              "values": [
+                {
+                  "text": "If you are confused and would like to speak to a real person, please click on the link below:"
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            },
+            {
+              "values": [
+                {
+                  "text": "LINK: https://mybusiness.service.nsw.gov.au/concierge, Business Concierge"
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            }
+          ]
+        },
+        "conditions": "anything_else",
+        "dialog_node": "Anything else",
+        "previous_sibling": "node_5_1595376708203",
+        "disambiguation_opt_out": true
+      },
+      {
+        "type": "standard",
+        "title": "Grant suggestions",
+        "metadata": {
+          "_customization": {
+            "mcr": true
+          }
+        },
+        "digress_in": "does_not_return",
+        "dialog_node": "node_2_1595223716571",
+        "previous_sibling": "node_1_1595213253522"
+      },
+      {
+        "type": "standard",
+        "title": "Check whether to query industry guidelines",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "Additionally, based on the information provided, your small business requires a COVID-19 safety plan in order to reopen."
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            },
+            {
+              "values": [
+                {
+                  "text": "Would you like to view these industry guidelines? (yes/no)"
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            }
+          ]
+        },
+        "metadata": {
+          "_customization": {
+            "mcr": false
+          }
+        },
+        "conditions": "#query-industry-guidelines",
+        "digress_in": "does_not_return",
+        "dialog_node": "node_9_1594822818704",
+        "previous_sibling": "node_2_1595223716571"
+      },
+      {
+        "type": "standard",
+        "title": "Welcome",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "(watson assistant) Is this the first time that you are using the platform"
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            }
+          ]
+        },
+        "conditions": "welcome",
+        "dialog_node": "node_3_1595158458414"
+      }
+    ],
+    "counterexamples": [],
+    "system_settings": {
+      "off_topic": {
+        "enabled": true
+      },
+      "disambiguation": {
+        "prompt": "Did you mean:",
+        "enabled": true,
+        "randomize": true,
+        "max_suggestions": 5,
+        "suggestion_text_policy": "title",
+        "none_of_the_above_prompt": "None of the above"
+      },
+      "system_entities": {
+        "enabled": true
+      },
+      "human_agent_assist": {
+        "prompt": "Did you mean:"
+      },
+      "spelling_auto_correct": true
+    },
+    "learning_opt_out": false,
+    "name": "Government Question",
+    "language": "en",
+    "description": "Answer information from Service NSW websites"
+  }
