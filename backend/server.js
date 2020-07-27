@@ -10,23 +10,21 @@ const axios = require("axios");
 const cheerio = require("cheerio");
 const cron = require("node-cron");
 
+// Allow app to read params and send the frontend
 app.use(bodyParser.json());
 app.use(express.static("public"));
 
-//Assistant
+// Assistant
 var AssistantV2 = require('ibm-watson/assistant/v2');
 const { IamAuthenticator, BearerTokenAuthenticator } = require('ibm-watson/auth');
 
-// Set up scheduler (runs every hour)
-var alerts = [
-    {
-        day: '-1',
-        month: 'Septembruary',
-        link: 'https://www.google.com.au',
-        title: 'Lorem ipsum dolor sit'
-    }
-];
+// Cloudant
+var Cloudant = require('@cloudant/cloudant');
 
+// Alerts is initialised as empty list
+var alerts = [];
+
+// Update the alerts list
 const updateAlerts = () => {
     const url = "https://www.nsw.gov.au/covid-19/latest-news-and-updates";
 
@@ -38,6 +36,10 @@ const updateAlerts = () => {
         var elems = [];
 
         $('h3:contains("2020")').each((i, elem) => {
+            elems.push(elem);
+        });
+
+        $('h3:contains("2021")').each((i, elem) => {
             elems.push(elem);
         });
 
@@ -90,7 +92,17 @@ const updateAlerts = () => {
             })
         }
 
-        alerts = result;
+        // Combine result with alerts
+        for (var i = 0; i < result.length; i++) {
+            if (alerts.indexOf(result[i]) < 0) {
+                alerts.push(result[i]);
+            }
+        }
+
+        // Remove alerts when they are too old
+        while (alerts.length > 20) {
+            alerts.shift();
+        }
 
     }, err => {
         console.log(err)
@@ -99,20 +111,31 @@ const updateAlerts = () => {
     });
 }
 
+// Ensure that list of alerts is filled when server is created
 updateAlerts();
 
-cron.schedule("* * * * *", function () {
+// Schedule alerts to be updated every 10 minutes
+cron.schedule("*/10 * * * *", function () {
     updateAlerts();
 });
 
-// Send alerts to user
-app.get("/api/alerts", (req, res) => {
-    res.json({ alerts: alerts });
+// Set up Assistant
+let authenticator;
+if (process.env.ASSISTANT_IAM_APIKEY) {
+    authenticator = new IamAuthenticator({
+        apikey: process.env.ASSISTANT_IAM_APIKEY
+    });
+}
+
+// Connect assistant to Watson
+const assistant = new AssistantV2({
+    version: '2019-02-28',
+    authenticator: authenticator,
+    url: process.env.ASSISTANT_URL,
+    disableSslVerification: process.env.DISABLE_SSL_VERIFICATION === 'true' ? true : false
 });
 
-// Cloudant
-var Cloudant = require('@cloudant/cloudant');
-
+// Create a Cloudant connection
 var cloudant = new Cloudant({
     url: process.env.CLOUDANT_URL,
     plugins: {
@@ -122,8 +145,10 @@ var cloudant = new Cloudant({
     }
 });
 
+// Connect to users database
 const users = cloudant.use("users");
 
+// User information endpoint
 app.post("/api/users", (req, res) => {
     let token = req.body.token;
 
@@ -151,6 +176,7 @@ app.post("/api/users", (req, res) => {
     })
 });
 
+// Update user endpoint
 app.post("/api/update_user", (req, res) => {
 
     let token = req.body.token;
@@ -175,6 +201,7 @@ app.post("/api/update_user", (req, res) => {
     })
 });
 
+// Delete user endpoint
 app.post("/api/delete_user", (req, res) => {
     let token = req.body.token;
 
@@ -195,19 +222,9 @@ app.post("/api/delete_user", (req, res) => {
     })
 });
 
-// Set up Assistant
-let authenticator;
-if (process.env.ASSISTANT_IAM_APIKEY) {
-    authenticator = new IamAuthenticator({
-        apikey: process.env.ASSISTANT_IAM_APIKEY
-    });
-}
-
-const assistant = new AssistantV2({
-    version: '2019-02-28',
-    authenticator: authenticator,
-    url: process.env.ASSISTANT_URL,
-    disableSslVerification: process.env.DISABLE_SSL_VERIFICATION === 'true' ? true : false
+// Send alerts to user
+app.get("/api/alerts", (req, res) => {
+    res.json({ alerts: alerts });
 });
 
 // Create assistant session
