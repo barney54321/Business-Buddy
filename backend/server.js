@@ -125,44 +125,74 @@ var cloudant = new Cloudant({
 const users = cloudant.use("users");
 
 app.post("/api/users", (req, res) => {
-    let email = req.body.email;
     let token = req.body.token;
 
-    users.get(email).then((body) => {
-        res.json(body);
-    }).catch(err => {
-        // Called if first-time user
-        users.insert({ _id: email, email: email, services: [] }).then(body => {
-            users.get(email).then((body) => {
-                res.json(body);
-            })
+    axios.get("https://" + process.env.REACT_APP_AUTH0_DOMAIN + "/userinfo", {
+        headers: {
+            Authorization: 'Bearer ' + token
+        }
+    }).then(authRes => {
+        var email = authRes.data.email;
+
+        users.get(email).then((body) => {
+            res.json(body);
         }).catch(err => {
-            res.json({});
+            // Called if first-time user
+            users.insert({ _id: email, email: email, services: [] }).then(body => {
+                users.get(email).then((body) => {
+                    res.json(body);
+                })
+            }).catch(err => {
+                res.json({});
+            });
         });
-    });
+    }).catch(err => {
+        res.json({});
+    })
 });
 
 app.post("/api/update_user", (req, res) => {
-    let newBusiness = req.body.newBusiness;
 
-    users.insert(newBusiness).then((body) => {
-        users.get(newBusiness.email).then((body) => {
-            res.json(body);
-        }).catch(err => {
-            res.json(newBusiness);
-        })
-    }).catch(err => console.log(err));
+    let token = req.body.token;
+
+    axios.get("https://" + process.env.REACT_APP_AUTH0_DOMAIN + "/userinfo", {
+        headers: {
+            Authorization: 'Bearer ' + token
+        }
+    }).then(authRes => {
+        let newBusiness = req.body.newBusiness;
+        newBusiness.email = authRes.data.email;
+
+        users.insert(newBusiness).then((body) => {
+            users.get(newBusiness.email).then((body) => {
+                res.json(body);
+            }).catch(err => {
+                res.json(newBusiness);
+            })
+        }).catch(err => console.log(err));
+    }).catch(err => {
+        res.json({});
+    })
 });
 
 app.post("/api/delete_user", (req, res) => {
-    let email = req.body.email;
     let token = req.body.token;
 
-    users.get(email).then((body) => {
-        users.destroy(email, body._rev);
+    axios.get("https://" + process.env.REACT_APP_AUTH0_DOMAIN + "/userinfo", {
+        headers: {
+            Authorization: 'Bearer ' + token
+        }
+    }).then(authRes => {
+        var email = authRes.data.email;
+
+        users.get(email).then((body) => {
+            users.destroy(email, body._rev);
+        }).catch(err => {
+            console.log(err);
+        });
     }).catch(err => {
-        console.log(err);
-    });
+        res.json({});
+    })
 });
 
 // Set up Assistant
@@ -187,10 +217,8 @@ app.get("/api/session", (req, res) => {
     })
         .then(assistantRes => {
             res.json(assistantRes);
-            // res.json(console.log(JSON.stringify(res.result, null, 2));
         })
         .catch(err => {
-            // console.log(err);
             res.json(err);
         });
 });

@@ -13,37 +13,42 @@ import Alerts from './components/Alerts';
 import { useAuth0 } from "@auth0/auth0-react";
 
 const App = () => {
-	const { isAuthenticated, user, logout } = useAuth0();
+	const { isAuthenticated, user, logout, getAccessTokenSilently } = useAuth0();
 
 	const [page, setPage] = React.useState("loading");
 	const [business, setBusiness] = React.useState(null);
 	const [alerts, setAlerts] = React.useState(null);
+	const [token, setToken] = React.useState(null);
 
 	React.useEffect(() => {
 		if (!isAuthenticated) {
 			return;
 		}
 
-		var url = "/api/users";
+		getAccessTokenSilently().then(res => {
+			setToken(res);
 
-		let postData = {
-			email: user.email,
-			token: "",
-		}
+			var url = "/api/users";
 
-		axios.post(url, postData).then((x) => {
-			setBusiness(x.data);
-			setPage("dashboard");
-		});
+			let postData = {
+				email: user.email,
+				token: res,
+			}
 
-	}, [isAuthenticated, user]);
+			axios.post(url, postData).then((x) => {
+				setBusiness(x.data);
+				setPage("dashboard");
+			});
+		})
+
+	}, [isAuthenticated, user, getAccessTokenSilently]);
 
 	const updateBusiness = (newBusiness) => {
 		var url = "/api/update_user";
 
 		let postData = {
 			newBusiness: newBusiness,
-			token: "",
+			token: token,
 		};
 
 		axios.post(url, postData).then((x) => {
@@ -62,7 +67,7 @@ const App = () => {
 
 		let postData = {
 			email: business.email,
-			token: "",
+			token: token,
 		};
 
 		axios.post(url, postData);
@@ -84,7 +89,7 @@ const App = () => {
 		<>
 			<MenuBar user={user} business={business} setPage={(change) => setPage(change)}></MenuBar>
 
-			<Backdrop open={isAuthenticated && page==="loading"}>
+			<Backdrop open={isAuthenticated && page === "loading"}>
 				<CircularProgress color="inherit" />
 			</Backdrop>
 

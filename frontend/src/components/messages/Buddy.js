@@ -143,31 +143,38 @@ export default class Buddy extends React.Component {
             return;
         }
 
+        // Rudimentary injection defence
+        var cleanedMessage = this.state.currentMessage;
+        cleanedMessage = cleanedMessage.replace("<", "");
+        cleanedMessage = cleanedMessage.replace(">", "");
+        cleanedMessage = cleanedMessage.replace(";", "");
+        cleanedMessage = cleanedMessage.replace("/", "");
+
         if (this.state.lastBudyMessage === "What is the name of your business?") {
             // Set business name
             let newBusiness = { ...this.props.business };
-            newBusiness.name = this.state.currentMessage;
+            newBusiness.name = cleanedMessage;
             this.props.updateBusiness(newBusiness);
         }
 
-        if (this.state.lastBudyMessage === "Please enter the postcode your business is based in (e.g. 2000)") {
+        if (this.state.lastBudyMessage === "Please enter the postcode your business is based in. (e.g. 2000)") {
             // Set business postcode
             let newBusiness = { ...this.props.business };
-            newBusiness.postcode = this.state.currentMessage;
+            newBusiness.postcode = cleanedMessage;
             this.props.updateBusiness(newBusiness);
         }
 
-        if (this.state.lastBudyMessage === "Please enter the industry your business is in (e.g. taxi, retail, restaurant)") {
+        if (this.state.lastBudyMessage === "Please enter the industry your business is in. (e.g. taxi, retail, restaurant)") {
             // Set business industry
             let newBusiness = { ...this.props.business };
-            newBusiness.industry = this.state.currentMessage;
+            newBusiness.industry = cleanedMessage;
             this.props.updateBusiness(newBusiness);
         }
 
-        if (this.state.lastBudyMessage === "Please enter the number of employees your business has (e.g. 20)") {
+        if (this.state.lastBudyMessage === "Please enter the number of employees your business has. (e.g. 20)") {
             // Set business employee count
             let newBusiness = { ...this.props.business };
-            newBusiness.employee_count = this.state.currentMessage;
+            newBusiness.employee_count = cleanedMessage;
             this.props.updateBusiness(newBusiness);
         }
 
@@ -190,7 +197,7 @@ export default class Buddy extends React.Component {
         var messages = this.state.messages;
 
         messages.push({
-            text: this.state.currentMessage,
+            text: cleanedMessage,
             buddyMessage: false,
             align: "right",
             colour: "#4491FF",
@@ -198,7 +205,7 @@ export default class Buddy extends React.Component {
             index: messages.length
         });
 
-        let message = this.state.currentMessage;
+        let message = cleanedMessage;
 
         this.setState({
             messages: messages,
