@@ -4,10 +4,25 @@ import Grid from "@material-ui/core/Grid";
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import Avatar from "@material-ui/core/Avatar";
+import { makeStyles } from '@material-ui/core/styles';
 
 import LogoutButton from "./authorisation/LogoutButton";
 
+const useStyles = makeStyles({
+    gridItem: { 
+        paddingTop: "1%", 
+        paddingRight: "2%" 
+    },
+    avatar: { 
+        float: "right", 
+        marginRight: "20%", 
+        marginTop: "5%" 
+    }
+});
+
+
 const CompanyLogo = (props) => {
+    const classes = useStyles();
 
     const [anchorEl, setAnchorEl] = React.useState(null);
 
@@ -33,14 +48,14 @@ const CompanyLogo = (props) => {
 
     return (
         <Grid container>
-            <Grid item xs style={{ paddingTop: "1%", paddingRight: "2%" }}>
+            <Grid item xs className={classes.gridItem}>
                 <Typography variant="h5" >
                     {name}
                 </Typography>
             </Grid>
 
             <Grid item xs={1}>
-                <Avatar onClick={handleClick} alt={user.name} src={user.picture} style={{ float: "right", marginRight: "20%", marginTop: "5%" }} />
+                <Avatar onClick={handleClick} alt={user.name} src={user.picture} className={classes.avatar}/>
 
                 <Menu
                     id="company-dropdown"

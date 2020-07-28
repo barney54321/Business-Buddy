@@ -239,7 +239,15 @@ export default class Buddy extends React.Component {
     render() {
 
         // Funny things are to ensure view is scrolled to bottom on update
-        var messageObjects = this.state.messages.slice().reverse().map((obj) => <Message text={obj.text} align={obj.align} key={obj.index} colour={obj.colour} textColour={obj.textColour} />);
+        var messageObjects = this.state.messages.slice().reverse().map((obj) => {
+            return  <Message 
+                        text={obj.text} 
+                        align={obj.align} 
+                        key={obj.index} 
+                        colour={obj.colour} 
+                        textColour={obj.textColour} 
+                    />
+        });
 
 
         var loadingMessage = <></>;
