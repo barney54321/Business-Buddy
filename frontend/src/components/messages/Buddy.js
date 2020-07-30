@@ -262,17 +262,35 @@ export default class Buddy extends React.Component {
                 </Typography>
                 <Box boxShadow={5} borderRadius={10} style={{ height: "80vh", padding: "2%" }}>
 
-                    <Box id="messageBody" style={{ height: "93%", overflowY: "auto", overflowX: "hidden", display: "flex", flexDirection: "column-reverse", paddingBottom: "2%" }}>
+                    <Box 
+                        id="messageBody" 
+                        style={{ 
+                            height: "93%", 
+                            overflowY: "auto", 
+                            overflowX: "hidden", 
+                            display: "flex", 
+                            flexDirection: "column-reverse", 
+                            paddingBottom: "2%" 
+                        }}
+                    >
                         {loadingMessage}
                         {messageObjects}
                     </Box>
 
                     <form noValidate autoComplete="off" onSubmit={this.forSubmit}>
-                        <TextField id="outlined-basic" variant="outlined" size="small" value={this.state.currentMessage} onChange={this.changeText} style={{ width: "93.5%" }} />
+
+                        <TextField 
+                            id="outlined-basic" 
+                            variant="outlined" 
+                            size="small" 
+                            value={this.state.currentMessage} 
+                            onChange={this.changeText} 
+                            style={{ width: "calc(100% - 50px)" }} 
+                        />
                         <img
                             src="send.jpg"
                             alt="SEND"
-                            width="5%"
+                            width="40px"
                             onClick={() => this.clickSend()}
                             style={{ paddingLeft: "1%" }}
                         />
