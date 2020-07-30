@@ -9,11 +9,11 @@ import SignUpButton from "./SignUpButton.js";
 
 const useStyles = makeStyles({
 	leftBox: { 
-		height: "20vh", 
+		height: "20%", 
 		paddingTop: "15%" 
 	},
 	rightBox: { 
-		height: "20vh", 
+		height: "20%", 
 		paddingTop: "20%" 
 	},
 	typography: { 
@@ -25,7 +25,7 @@ const LoginPage = () => {
 	const classes = useStyles();
 
 	return (
-		<Box height="93vh">
+		<Box height="auto">
 			<Grid container p={3}>
 
 				<Grid item xs={3}></Grid>

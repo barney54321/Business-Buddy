@@ -48,7 +48,7 @@ export default class Buddy extends React.Component {
         var d = new Date();
         var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
-        if (this.props.alerts[0].day !== "-1") {
+        if (this.props.alerts !== undefined && this.props.alerts[0] !== undefined && this.props.alerts[0].day !== "-1") {
             for (var i = 0; i < this.props.alerts.length; i++) {
                 var alert = this.props.alerts[i];
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import Typography from '@material-ui/core/Typography';
-import Grid from "@material-ui/core/Grid";
+import Box from "@material-ui/core/Box";
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import Avatar from "@material-ui/core/Avatar";
@@ -9,14 +9,14 @@ import { makeStyles } from '@material-ui/core/styles';
 import LogoutButton from "./authorisation/LogoutButton";
 
 const useStyles = makeStyles({
-    gridItem: { 
-        paddingTop: "1%", 
-        paddingRight: "2%" 
+    typography: { 
+        marginTop: "-5%",
+        whiteSpace: "nowrap",
     },
-    avatar: { 
-        float: "right", 
-        marginRight: "20%", 
-        marginTop: "5%" 
+    avatar: {
+        float: "right",
+        marginRight: "20%",
+        marginTop: "5%"
     }
 });
 
@@ -47,15 +47,15 @@ const CompanyLogo = (props) => {
     }
 
     return (
-        <Grid container>
-            <Grid item xs className={classes.gridItem}>
-                <Typography variant="h5" >
+        <Box display="flex" justifyContent="flex-end">
+            <Box m="auto" >
+                <Typography variant="h5" className={classes.typography}>
                     {name}
                 </Typography>
-            </Grid>
+            </Box>
 
-            <Grid item xs={1}>
-                <Avatar onClick={handleClick} alt={user.name} src={user.picture} className={classes.avatar}/>
+            <Box style={{ width: "70px" }}>
+                <Avatar onClick={handleClick} alt={user.name} src={user.picture} className={classes.avatar} />
 
                 <Menu
                     id="company-dropdown"
@@ -68,9 +68,8 @@ const CompanyLogo = (props) => {
                     <MenuItem onClick={() => handleChange("settings")}>Settings</MenuItem>
                     <LogoutButton />
                 </Menu>
-
-            </Grid>
-        </Grid>
+            </Box>
+        </Box>
     );
 }
 

@@ -10,7 +10,7 @@ const useStyles = makeStyles({
     container: {
         color: "#183052",
         width: "100%",
-        height: "92vh",
+        height: "auto",
         paddingTop: "2vh"
     }
 });
