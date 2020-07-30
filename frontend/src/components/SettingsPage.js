@@ -87,9 +87,9 @@ const SettingsPage = (props) => {
 
             <Grid container spacing={3} className={classes.container}>
 
-                <Grid item xs={2}></Grid>
+                <Grid item xs sm md lg={1} xl={2}></Grid>
 
-                <Grid item xs={5}>
+                <Grid item md={5} lg={6} xl={5}>
 
                     <Typography variant="h5" className={classes.typographyH5}>
                         <strong>My Data</strong>
@@ -161,7 +161,7 @@ const SettingsPage = (props) => {
 
                 </Grid>
 
-                <Grid item xs={3}>
+                <Grid item md={5} lg={4} xl={3}>
 
                     <Typography variant="h5" className={classes.typographyH5}>
                         <strong>Settings</strong>
@@ -190,7 +190,7 @@ const SettingsPage = (props) => {
 
                 </Grid>
 
-                <Grid item xs={2}></Grid>
+                <Grid item xs sm md lg={1} xl={2}></Grid>
 
             </Grid>
         </>

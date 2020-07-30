@@ -15,6 +15,17 @@ const useStyles = makeStyles((theme) => ({
         textAlign: 'center',
         color: theme.palette.text.secondary,
     },
+    typography: { 
+        color: "#000000", 
+        paddingBottom: "3%", 
+        paddingLeft: "2%" 
+    },
+    container: {
+        overflowY: "auto", 
+        height: "auto", 
+        maxHeight: "85vh", 
+        backgroundColor: "#FFFFFF"
+    }
 }));
 
 const colors = [
@@ -52,10 +63,10 @@ export default function Services(props) {
     return (
         <div className={classes.root}>
 
-            <Typography variant="h5" style={{ color: "#000000", paddingBottom: "3%", paddingLeft: "2%" }}>
+            <Typography variant="h5" className={classes.typography}>
                 <strong>My Services</strong>
             </Typography>
-            <Grid container spacing={3} style={{overflowY: "auto", height: "auto", maxHeight: "85vh", backgroundColor: "#FFFFFF"}}>
+            <Grid container spacing={3} className={classes.container}>
                 {services.map((val, index) =>
                     <Service val={val} key={index} color={colors[index % colors.length]}></Service>
                 )}

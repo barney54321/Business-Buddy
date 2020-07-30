@@ -5,9 +5,10 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles({
     box: { 
-        height: "90%", 
-        width: "100%", 
-        padding: "2%" 
+        maxHeight: "70vh", 
+        width: "95%", 
+        padding: "2%",
+        overflowY: "auto"
     },
     typography: { 
         color: "#000000", 

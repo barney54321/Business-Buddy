@@ -21,9 +21,9 @@ const Dashboard = (props) => {
     return (
         <Grid container spacing={3} className={classes.container}>
 
-            <Grid item xs={2}></Grid>
+            <Grid item xs sm md lg={1} xl={2}></Grid>
 
-            <Grid item xs={5}>
+            <Grid item xs={12} md={5} lg={6} xl={5}>
                 <Buddy
                     business={props.business}
                     addService={props.addService}
@@ -32,7 +32,7 @@ const Dashboard = (props) => {
                 />
             </Grid>
 
-            <Grid item xs={3}>
+            <Grid item xs={12} md={5} lg={4} xl={3}>
                 <Services
                     setPage={props.setPage}
                     addService={props.addService}
@@ -40,7 +40,7 @@ const Dashboard = (props) => {
                 />
             </Grid>
 
-            <Grid item xs={2}></Grid>
+            <Grid item xs sm md lg={1} xl={2}></Grid>
 
         </Grid>
     );

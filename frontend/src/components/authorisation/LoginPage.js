@@ -18,6 +18,9 @@ const useStyles = makeStyles({
 	},
 	typography: { 
 		color: "#000000" 
+	},
+	outerBox: {
+		height: "calc(100vh - 65px)"
 	}
 });
 
@@ -25,7 +28,7 @@ const LoginPage = () => {
 	const classes = useStyles();
 
 	return (
-		<Box height="auto">
+		<Box className={classes.outerBox}>
 			<Grid container p={3}>
 
 				<Grid item xs={3}></Grid>

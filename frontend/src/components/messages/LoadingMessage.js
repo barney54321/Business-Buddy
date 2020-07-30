@@ -22,7 +22,7 @@ export default class Message extends React.Component {
         }
 
         return (
-            <Box display="block" style={{width: "100%", float: this.alignment, height: "2.5%", padding: "0.1%"}}>
+            <Box display="block" style={{width: "100%", float: this.alignment, height: "20px", padding: "0.1%"}}>
                 <Box variant="outlined" borderRadius={10} style={messageStyle}>
                     <ReactLoading type={"bubbles"} color={"#000000"} height={10} width={30} />
                 </Box>

@@ -260,12 +260,12 @@ export default class Buddy extends React.Component {
                 <Typography variant="h5" style={{ color: "#000000", paddingBottom: "2%", paddingLeft: "2%" }}>
                     <strong>My Buddy</strong>
                 </Typography>
-                <Box boxShadow={5} borderRadius={10} style={{ height: "80vh", padding: "2%" }}>
+                <Box boxShadow={5} borderRadius={10} style={{ height: "74vh", padding: "2%" }}>
 
                     <Box 
                         id="messageBody" 
                         style={{ 
-                            height: "93%", 
+                            height: "calc(100% - 55px)", 
                             overflowY: "auto", 
                             overflowX: "hidden", 
                             display: "flex", 
