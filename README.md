@@ -212,10 +212,10 @@ You can find a running system to test at [Business Buddy](https://businessbuddy.
 
 ## Authors
 
-Andrew Esteban
-Jagen Yoon
-Joshua Mok
-Theresa Wang
+* Andrew Esteban
+* Jagen Yoon
+* Joshua Mok
+* Theresa Wang
 
 ## License
 
