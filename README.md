@@ -155,8 +155,6 @@ npm start
 
 This will open BusinessBuddy on localhost://3000
 
-Say what the step will be, for example
-
 ### Suggested Business Information
 
 Try using the following data to have a business that is eligible for the Small Business Recovery Grant:
