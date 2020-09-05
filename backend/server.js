@@ -99,6 +99,20 @@ const updateAlerts = () => {
             }
         }
 
+        const alertsCopy = [...alerts];
+
+        // Filer duplicate alerts (occurs when page changes with alert copied across)
+        alerts = alerts.filter((elem, i) => {
+            for (var j = 0; j < alertsCopy.length; j++) {
+                if (j != i) {
+                    if (alertsCopy[j].link === elem) {
+                        return false;
+                    }
+                }
+            }
+            return true;
+        });
+
         // Remove alerts when they are too old
         while (alerts.length > 20) {
             alerts.shift();
