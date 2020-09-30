@@ -8,9 +8,14 @@ import { makeStyles } from '@material-ui/core/styles';
 
 import LogoutButton from "./authorisation/LogoutButton";
 
+import {
+    BrowserView,
+    isMobile,
+} from "react-device-detect";
+
 const useStyles = makeStyles({
     typography: { 
-        marginTop: "-5%",
+        marginTop: "5%",
         whiteSpace: "nowrap",
     },
     avatar: {
@@ -48,13 +53,15 @@ const CompanyLogo = (props) => {
 
     return (
         <Box display="flex" justifyContent="flex-end">
-            <Box m="auto" >
-                <Typography variant="h5" className={classes.typography}>
-                    {name}
-                </Typography>
-            </Box>
+            <BrowserView>
+                <Box m="auto" >
+                    <Typography variant="h5" className={classes.typography}>
+                        {name}
+                    </Typography>
+                </Box>
+            </BrowserView>
 
-            <Box style={{ width: "70px" }}>
+            <Box style={{ width: isMobile ? "10px" : "70px"  }}>
                 <Avatar onClick={handleClick} alt={user.name} src={user.picture} className={classes.avatar} />
 
                 <Menu

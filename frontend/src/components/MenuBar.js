@@ -7,6 +7,11 @@ import { useAuth0 } from "@auth0/auth0-react";
 import CompanyLogo from './CompanyLogo';
 import { Box } from '@material-ui/core';
 
+import {
+    BrowserView,
+    MobileView,
+} from "react-device-detect";
+
 const useStyles = makeStyles({
     appBar: {
         backgroundColor: "#FFFFFF",
@@ -14,6 +19,18 @@ const useStyles = makeStyles({
         width: "100%",
         color: "#000000",
         paddingTop: "10px"
+    },
+    appBarMobile: {
+        backgroundColor: "#FFFFFF",
+        height: "9vh",
+        width: "100%",
+        color: "#000000",
+        paddingTop: "10px"
+    },
+    typographyMobile: {
+        marginTop: "5%",
+        overflow: "hidden",
+        whiteSpace: "nowrap"
     },
     typography: {
         marginTop: "-1%",
@@ -27,6 +44,10 @@ const useStyles = makeStyles({
     koala: { 
         paddingLeft: "10px", 
         height: "50px" 
+    },
+    koalaMobile: { 
+        paddingLeft: "10px", 
+        height: "7vh" 
     },
     textBox: { 
         maxWidth: "60%" 
@@ -49,31 +70,60 @@ const MenuBar = (props) => {
     }
 
     return (
-        <AppBar position="static" elevation={1} className={classes.appBar}>
-
-            <Box display="flex">
-                <Box flexGrow={1}>
+        <>
+            <BrowserView>
+                <AppBar position="static" elevation={1} className={classes.appBar}>
                     <Box display="flex">
-                        <Box className={classes.imageBox}>
-                            <img
-                                src="koala.jpg"
-                                alt="logo"
-                                className={classes.koala}
-                            />
+                        <Box flexGrow={1}>
+                            <Box display="flex">
+                                <Box className={classes.imageBox}>
+                                    <img
+                                        src="koala.jpg"
+                                        alt="logo"
+                                        className={classes.koala}
+                                    />
+                                </Box>
+
+                                <Box onClick={() => props.setPage("dashboard")} overflow="hidden" alignItems="center" className={classes.textBox}>
+                                    <Typography variant="h3" className={classes.typography}>
+                                        <strong>Business Buddy</strong>
+                                    </Typography>
+                                </Box>
+                            </Box>
                         </Box>
 
-                        <Box onClick={() => props.setPage("dashboard")} overflow="hidden" alignItems="center" className={classes.textBox}>
-                            <Typography variant="h3" className={classes.typography}>
-                                <strong>Business Buddy</strong>
-                            </Typography>
-                        </Box>
+                        {userInfo}
                     </Box>
-                </Box>
 
-                {userInfo}
-            </Box>
+                </AppBar>
+            </BrowserView>
+            <MobileView>
+                <AppBar position="static" elevation={1} className={classes.appBarMobile}>
+                    <Box display="flex">
+                        <Box flexGrow={1}>
+                            <Box display="flex">
+                                <Box className={classes.imageBox}>
+                                    <img
+                                        src="koala.jpg"
+                                        alt="logo"
+                                        className={classes.koalaMobile}
+                                    />
+                                </Box>
 
-        </AppBar>
+                                <Box onClick={() => props.setPage("dashboard")} overflow="hidden" alignItems="center" className={classes.textBox}>
+                                    <Typography variant="h5" className={classes.typographyMobile}>
+                                        <strong>Business Buddy</strong>
+                                    </Typography>
+                                </Box>
+                            </Box>
+                        </Box>
+
+                        {userInfo}
+                    </Box>
+
+                </AppBar>
+            </MobileView>
+        </>
     );
 }
 

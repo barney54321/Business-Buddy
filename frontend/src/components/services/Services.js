@@ -3,6 +3,11 @@ import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 
+import {
+    BrowserView,
+    isMobile
+} from "react-device-detect";
+
 import Service from "./Service";
 import AddService from "./AddService";
 
@@ -21,8 +26,10 @@ const useStyles = makeStyles((theme) => ({
         paddingLeft: "2%" 
     },
     container: {
-        overflowY: "auto", 
+        overflowY: "auto",
+        marginTop: isMobile ? "3%" : "-1%", 
         height: "auto", 
+        display: "flex", 
         maxHeight: "85vh", 
         backgroundColor: "#FFFFFF"
     }
@@ -63,9 +70,11 @@ export default function Services(props) {
     return (
         <div className={classes.root}>
 
-            <Typography variant="h5" className={classes.typography}>
-                <strong>My Services</strong>
-            </Typography>
+            <BrowserView>
+                <Typography variant="h5" className={classes.typography}>
+                    <strong>My Services</strong>
+                </Typography>
+            </BrowserView>
             <Grid container spacing={3} className={classes.container}>
                 {services.map((val, index) =>
                     <Service val={val} key={index} color={colors[index % colors.length]}></Service>
