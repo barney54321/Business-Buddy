@@ -4,6 +4,11 @@ import Typography from '@material-ui/core/Typography';
 import TextField from "@material-ui/core/TextField";
 import Box from "@material-ui/core/Box";
 
+import {
+    BrowserView,
+    isMobile
+} from "react-device-detect";
+
 import Message from "./Message";
 import LoadingMessage from "./LoadingMessage";
 
@@ -257,10 +262,12 @@ export default class Buddy extends React.Component {
 
         return (
             <>
-                <Typography variant="h5" style={{ color: "#000000", paddingBottom: "2%", paddingLeft: "2%" }}>
-                    <strong>My Buddy</strong>
-                </Typography>
-                <Box boxShadow={5} borderRadius={10} style={{ height: "74vh", padding: "2%" }}>
+                <BrowserView>
+                    <Typography variant="h5" style={{ color: "#000000", paddingBottom: "2%", paddingLeft: "2%" }}>
+                        <strong>My Buddy</strong>
+                    </Typography>
+                </BrowserView>
+                <Box boxShadow={5} borderRadius={10} style={{ height: isMobile ? "82vh" : "74vh", padding: "2%" }}>
 
                     <Box 
                         id="messageBody" 
