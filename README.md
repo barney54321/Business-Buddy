@@ -115,7 +115,7 @@ You can find a running system to test at [Business Buddy](https://businessbuddy.
 
 This project is licensed under the Apache 2 License - see the [LICENSE](LICENSE) file for details
 
-## License
+## Contributing
 
 [More detail is available here](CONTRIBUTING.md)
 
