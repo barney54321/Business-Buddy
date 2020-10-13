@@ -110,11 +110,11 @@ opening and triaging issues, but carries with it a necessary review and approval
 workflow that ensures that the proposed changes meet the minimal quality and
 functional guidelines of Business Buddy.
 
-## [Getting Started](GETTING_STARTED.md)
+## Getting Started
 
 [More detail is available here](GETTING_STARTED.md)
 
-## [Pull Requests](PULL_REQUESTS.md)
+## Pull Requests
 
 [More detail is available here](PULL_REQUESTS.md)
 
